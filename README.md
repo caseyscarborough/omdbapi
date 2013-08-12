@@ -59,6 +59,21 @@ This function will return a Hash with the following information about the title:
 :actors, :plot, :poster, :imdb_rating, :imdb_votes, :imdb_id, :type
 ```
 
+You can also pass in the optional parameters for year or plot. Plot defaults to 'short', so the only other option is 'full'.
+
+```ruby
+OMDB.title('True Grit')
+# => {:title=>"True Grit", :year=>"2010", :rated=>"PG-13"...
+OMDB.title('True Grit', year: '1969')
+# => {:title=>"True Grit", :year=>"1969", :rated=>"G"...
+
+# Get the title with the full plot
+OMDB.title('Breaking Bad', plot: 'full')
+
+# Get the original Italian Job with the full plot
+OMDB.title('The Italian Job', year: '1969', plot: 'full')
+```
+
 ### Search
 
 You can find a title by using the find method:
