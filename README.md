@@ -4,6 +4,12 @@ This gem is (will be) a simple and easy to use wrapper for the [omdbapi.com](htt
 
 ## Installation
 
+### Requirements
+
+* Ruby v1.9.3 or later
+
+### Installing
+
 You can install the gem by adding it your application's Gemfile:
 
 ```ruby
