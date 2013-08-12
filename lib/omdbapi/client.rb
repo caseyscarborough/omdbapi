@@ -4,12 +4,17 @@ module OMDB
     include HTTParty
     base_uri OMDB::Default::API_ENDPOINT
 
-    def title(title)
+    def title(title, year=nil)
       get '/', { t: title }
     end
 
-    def search(query)
-      (get '/', { s: query }).search
+    def find_by_id(imdb_id) 
+      return get '/', { i: imdb_id } if imdb_id.start_with?('tt')
+      puts "Invalid IMDb ID."
+    end
+
+    def find(title)
+      (get '/', { s: title }).search
     end
 
     private
