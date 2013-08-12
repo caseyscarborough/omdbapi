@@ -8,7 +8,7 @@ module OMDB
       get '/', { t: title }
     end
 
-    def find_by_id(imdb_id) 
+    def id(imdb_id) 
       return get '/', { i: imdb_id } if imdb_id.start_with?('tt')
       puts "Invalid IMDb ID."
     end

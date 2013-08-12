@@ -55,12 +55,12 @@ This function will return a Hash with the following information about the title:
 
 ### Search
 
-You can search for a title by using the search method:
+You can find a title by using the find method:
 
 ```ruby
-search = OMDB.search('Star Wars')
+results = OMDB.find('Star Wars')
 # => [{:title=>"Star Wars", :year=>"1977", :imdb_id=>"tt0076759", :type=>"movie"}, {:title=>"Star Wars: Episode V - The Empire Strikes Back", :year=>"1980", :imdb_id=>"tt0080684", :type=>"movie"}, {:title=>"Star Wars: Episode VI - Return of the Jedi", :year=>"1983", :imdb_id=>"tt0086190", :type=>"movie"}, {:title=>"Star Wars: Episode I - The Phantom Menace", :year=>"1999", :imdb_id=>"tt0120915", :type=>"movie"}, {:title=>"Star Wars: Episode III - Revenge of the Sith", :year=>"2005", :imdb_id=>"tt0121766", :type=>"movie"}, {:title=>"Star Wars: Episode II - Attack of the Clones", :year=>"2002", :imdb_id=>"tt0121765", :type=>"movie"}, {:title=>"Star Wars: The Clone Wars", :year=>"2008", :imdb_id=>"tt1185834", :type=>"movie"}, {:title=>"Star Wars: Clone Wars", :year=>"2003", :imdb_id=>"tt0361243", :type=>"series"}, {:title=>"Star Wars: The Clone Wars", :year=>"2008", :imdb_id=>"tt0458290", :type=>"series"}, {:title=>"The Star Wars Holiday Special", :year=>"1978", :imdb_id=>"tt0193524", :type=>"movie"}]
-search.each { |result| puts result.title }
+results.each { |r| puts r.title }
 # etc...
 ```
 
@@ -70,6 +70,19 @@ This method returns an Array of search results. Each search result is a Hash wit
 :title, :year, :imdb_id, :type
 ```
 
+### Find by IMDb ID
+
+You can find a title by it's IMDb id using the id method:
+
+```ruby
+lost = OMDB.id('tt0411008')
+# => {:title=>"Lost", :year=>"2004", :rated=>"TV-14", :released=>"22 Sep 2004", :runtime=>"42 min", :genre=>"Adventure, Drama, Fantasy, Mystery, Sci-Fi, Thriller", :director=>"N/A", :writer=>"J.J. Abrams, Jeffrey Lieber", :actors=>"Matthew Fox, Jorge Garcia, Evangeline Lilly, Naveen Andrews", :plot=>"The survivors of a plane crash are forced to live with each other on a remote island, a dangerous new world that poses unique threats of its own.", :poster=>"http://ia.media-imdb.com/images/M/MV5BMjA3NzMyMzU1MV5BMl5BanBnXkFtZTcwNjc1ODUwMg@@._V1_SX300.jpg", :imdb_rating=>"8.3", :imdb_votes=>"160,182", :imdb_id=>"tt0411008", :type=>"series", :response=>"True"} 
+lost.released    # => "22 Sep 2004"
+lost.imdb_rating # => "8.3"
+# etc...
+```
+
+This method will return a Hash of the title's properties, exactly as the title method.
 
 ## Contributing
 
