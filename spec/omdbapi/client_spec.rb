@@ -91,10 +91,10 @@ describe OMDB::Client do
       end
     end
 
-    describe 'find' do
+    describe 'search' do
 
       describe 'with search results' do
-        let(:results) { OMDB.find('Star Wars') }
+        let(:results) { OMDB.search('Star Wars') }
 
         it 'should return an array' do
           results.should be_instance_of Array
@@ -105,8 +105,20 @@ describe OMDB::Client do
         end
       end
 
+      describe 'with a single search result' do
+        let(:result) { OMDB.search('The Star Wars Holiday Special') }
+
+        it 'should return a hash of the title' do
+          result.should be_instance_of Hash
+        end
+
+        it 'should have a title' do
+          result.title.should eq('The Star Wars Holiday Special')
+        end
+      end
+
       describe 'with no search results' do
-        let(:results) { OMDB.find('lsdfoweirjrpwef323423dsfkip') }
+        let(:results) { OMDB.search('lsdfoweirjrpwef323423dsfkip') }
 
         it 'should return a hash' do
           results.should be_instance_of Hash
@@ -118,6 +130,12 @@ describe OMDB::Client do
 
         it 'should return a hash with an error message' do
           results.error.should be_instance_of String
+        end
+      end
+
+      describe 'should be aliased to find' do
+        it 'should be the same method' do
+          OMDB.search('Star Wars').should eq(OMDB.find('Star Wars'))
         end
       end
     end

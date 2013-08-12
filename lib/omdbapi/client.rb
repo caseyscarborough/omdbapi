@@ -31,16 +31,24 @@ module OMDB
       return get '/', { i: imdb_id }
     end
 
-    # Find a movie by its title.
+    # Search for a movie by its title.
     #
-    # @param title [String] The title of the movie or show to find.
+    # @param title [String] The title of the movie or show to search for.
     # @return [Array, Hash]
     # @example
     #   OMDB.find('Star Wars')
-    def find(title)
+    def search(title)
       results = get '/', { s: title }
-      results[:search] ? results[:search] : results
+      if results[:search]
+        # Return the title if there is only one result, otherwise return the seach results
+        search = results.search
+        search.size == 1 ? title(search[0].title) : search
+      else
+        results
+      end
     end
+
+    alias_method :find, :search
 
     private
 
