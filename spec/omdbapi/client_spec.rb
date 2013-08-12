@@ -25,6 +25,24 @@ describe OMDB::Client do
         end
       end
 
+      describe 'with the year parameter' do
+        let(:title1) { OMDB.title('True Grit') }
+        let(:title2) { OMDB.title('True Grit', year: '1969') }
+
+        it 'should not be the same title' do
+          title1.should_not eq(title2)
+        end
+      end
+
+      describe 'with the plot parameter' do
+        let(:title1) { OMDB.title('Game of Thrones') }
+        let(:title2) { OMDB.title('Game of Thrones', plot: 'full') }
+
+        it 'should have different plots' do
+          title1.plot.should_not eq(title2.plot)
+        end
+      end
+
       describe 'with a movie that doesn''t exist' do
         let(:title) { OMDB.title('lsdfoweirjrpwef323423dsfkip') }
         

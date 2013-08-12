@@ -14,8 +14,9 @@ module OMDB
     # @return [Hash]
     # @example
     #   OMDB.title('Game of Thrones')
-    def title(title, year=nil)
-      get '/', { t: title }
+    def title(title, options={})
+      params = build_params(title, options)
+      get '/', params
     end
 
 
@@ -55,6 +56,13 @@ module OMDB
         else
           value
         end
+      end
+
+      def build_params(title, options)
+        params = { t: title }
+        params[:plot] = options[:plot] if options[:plot]
+        params[:y] = options[:year] if options[:year]
+        params
       end
 
       # Performs a get request.
