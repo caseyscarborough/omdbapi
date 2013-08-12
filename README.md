@@ -1,6 +1,10 @@
 # omdbapi
 
-This gem is (will be) a simple and easy to use wrapper for the [omdbapi.com](http://omdbapi.com/) API.
+This gem is a simple and easy to use wrapper for the [omdbapi.com](http://omdbapi.com/) API. This API allows you to pull almost any type of information about a show or movie, and uses information from IMDb. 
+
+## Documentation
+
+The complete documentation for the gem can be viewed at [rdoc.info/gems/omdbapi/frames](http://rdoc.info/gems/omdbapi/frames).
 
 ## Installation
 
@@ -84,7 +88,17 @@ lost.imdb_rating # => "8.3"
 
 This method will return a Hash of the title's properties, exactly as the title method.
 
+## Running the Tests
+
+The test suite is written using RSpec, and can be run by issuing the following command from the root of the repository:
+
+```bash
+$ rspec spec
+```
+
 ## Contributing
+
+Please feel free to contribute to the project by following the options below.
 
 1. Fork it
 2. Create your feature branch (`git checkout -b my-new-feature`)
