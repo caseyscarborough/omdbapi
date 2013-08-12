@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>omdbapi by caseyscarborough</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>omdbapi</h1>
+        <p>A very easy to use API wrapper for getting movie information from omdbapi.com.</p>
+        <p class="view"><a href="https://github.com/caseyscarborough/omdbapi">View the Project on GitHub <small>caseyscarborough/omdbapi</small></a></p>
+        <ul>
+          <li><a href="https://github.com/caseyscarborough/omdbapi/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/caseyscarborough/omdbapi/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/caseyscarborough/omdbapi">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="omdbapi" class="anchor" href="#omdbapi"><span class="octicon octicon-link"></span></a>omdbapi</h1>
+
+<p><a href="http://badge.fury.io/rb/omdbapi"><img src="https://badge.fury.io/rb/omdbapi.png" alt="Gem Version"></a></p>
+
+<p>This gem is a simple and easy to use wrapper for the <a href="http://omdbapi.com/">omdbapi.com</a> API. This API allows you to pull almost any type of information about a show or movie, and uses information from IMDb. </p>
+
+<h2>
+<a name="documentation" class="anchor" href="#documentation"><span class="octicon octicon-link"></span></a>Documentation</h2>
+
+<p>The complete documentation for the gem can be viewed at <a href="http://rdoc.info/gems/omdbapi/frames">rdoc.info/gems/omdbapi/frames</a>.</p>
+
+<h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<h3>
+<a name="requirements" class="anchor" href="#requirements"><span class="octicon octicon-link"></span></a>Requirements</h3>
+
+<ul>
+<li>Ruby v1.9.3 or later</li>
+</ul><h3>
+<a name="installing" class="anchor" href="#installing"><span class="octicon octicon-link"></span></a>Installing</h3>
+
+<p>You can install the gem by adding it your application's Gemfile:</p>
+
+<div class="highlight"><pre><span class="n">gem</span> <span class="s1">'omdbapi'</span>
+</pre></div>
+
+<p>And then execute:</p>
+
+<div class="highlight"><pre><span class="nv">$ </span>bundle
+</pre></div>
+
+<p>Or you can install it manually by issuing the following command:</p>
+
+<div class="highlight"><pre><span class="nv">$ </span>gem install omdbapi
+</pre></div>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<div class="highlight"><pre><span class="nb">require</span> <span class="s1">'omdbapi'</span>
+</pre></div>
+
+<h3>
+<a name="title" class="anchor" href="#title"><span class="octicon octicon-link"></span></a>Title</h3>
+
+<p>You can get a movie or TV show's information in a Hash by using the title method, shown below:</p>
+
+<div class="highlight"><pre><span class="n">game_of_thrones</span> <span class="o">=</span> <span class="no">OMDB</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">'Game of Thrones'</span><span class="p">)</span>
+<span class="c1"># =&gt; {:title=&gt;"Game of Thrones", :year=&gt;"2011", :rated=&gt;"TV-MA", :released=&gt;"17 Apr 2011", :runtime=&gt;"1 h", :genre=&gt;"Adventure, Drama, Fantasy", :director=&gt;"N/A", :writer=&gt;"David Benioff, D.B. Weiss", :actors=&gt;"Peter Dinklage, Lena Headey, Maisie Williams, Emilia Clarke", :plot=&gt;"Seven noble families fight for control of the mythical land of Westeros.", :poster=&gt;"http://ia.media-imdb.com/images/M/MV5BNTY2MzAxNzM0Ml5BMl5BanBnXkFtZTcwNDA0MDkxOQ@@._V1_SX300.jpg", :imdb_rating=&gt;"9.4", :imdb_votes=&gt;"382,638", :imdb_id=&gt;"tt0944947", :type=&gt;"series", :response=&gt;"True"} </span>
+<span class="n">game_of_thrones</span><span class="o">.</span><span class="n">title</span> <span class="c1"># =&gt; "Game of Thrones"</span>
+<span class="n">game_of_thrones</span><span class="o">.</span><span class="n">year</span>  <span class="c1"># =&gt; "2011"</span>
+<span class="n">game_of_thrones</span><span class="o">.</span><span class="n">rated</span> <span class="c1"># =&gt; "TV-MA"</span>
+<span class="c1"># etc...</span>
+</pre></div>
+
+<p>This function will return a Hash with the following information about the title:</p>
+
+<div class="highlight"><pre><span class="ss">:title</span><span class="p">,</span> <span class="ss">:year</span><span class="p">,</span> <span class="ss">:rated</span><span class="p">,</span> <span class="ss">:released</span><span class="p">,</span> <span class="ss">:runtime</span><span class="p">,</span> <span class="ss">:genre</span><span class="p">,</span> <span class="ss">:director</span><span class="p">,</span> <span class="ss">:writer</span><span class="p">,</span> 
+<span class="ss">:actors</span><span class="p">,</span> <span class="ss">:plot</span><span class="p">,</span> <span class="ss">:poster</span><span class="p">,</span> <span class="ss">:imdb_rating</span><span class="p">,</span> <span class="ss">:imdb_votes</span><span class="p">,</span> <span class="ss">:imdb_id</span><span class="p">,</span> <span class="ss">:type</span>
+</pre></div>
+
+<h3>
+<a name="search" class="anchor" href="#search"><span class="octicon octicon-link"></span></a>Search</h3>
+
+<p>You can find a title by using the find method:</p>
+
+<div class="highlight"><pre><span class="n">results</span> <span class="o">=</span> <span class="no">OMDB</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">'Star Wars'</span><span class="p">)</span>
+<span class="c1"># =&gt; [{:title=&gt;"Star Wars", :year=&gt;"1977", :imdb_id=&gt;"tt0076759", :type=&gt;"movie"}, {:title=&gt;"Star Wars: Episode V - The Empire Strikes Back", :year=&gt;"1980", :imdb_id=&gt;"tt0080684", :type=&gt;"movie"}, {:title=&gt;"Star Wars: Episode VI - Return of the Jedi", :year=&gt;"1983", :imdb_id=&gt;"tt0086190", :type=&gt;"movie"}, {:title=&gt;"Star Wars: Episode I - The Phantom Menace", :year=&gt;"1999", :imdb_id=&gt;"tt0120915", :type=&gt;"movie"}, {:title=&gt;"Star Wars: Episode III - Revenge of the Sith", :year=&gt;"2005", :imdb_id=&gt;"tt0121766", :type=&gt;"movie"}, {:title=&gt;"Star Wars: Episode II - Attack of the Clones", :year=&gt;"2002", :imdb_id=&gt;"tt0121765", :type=&gt;"movie"}, {:title=&gt;"Star Wars: The Clone Wars", :year=&gt;"2008", :imdb_id=&gt;"tt1185834", :type=&gt;"movie"}, {:title=&gt;"Star Wars: Clone Wars", :year=&gt;"2003", :imdb_id=&gt;"tt0361243", :type=&gt;"series"}, {:title=&gt;"Star Wars: The Clone Wars", :year=&gt;"2008", :imdb_id=&gt;"tt0458290", :type=&gt;"series"}, {:title=&gt;"The Star Wars Holiday Special", :year=&gt;"1978", :imdb_id=&gt;"tt0193524", :type=&gt;"movie"}]</span>
+<span class="n">results</span><span class="o">.</span><span class="n">each</span> <span class="p">{</span> <span class="o">|</span><span class="n">r</span><span class="o">|</span> <span class="nb">puts</span> <span class="n">r</span><span class="o">.</span><span class="n">title</span> <span class="p">}</span>
+<span class="c1"># etc...</span>
+</pre></div>
+
+<p>This method returns an Array of search results. Each search result is a Hash with the following information about the result:</p>
+
+<div class="highlight"><pre><span class="ss">:title</span><span class="p">,</span> <span class="ss">:year</span><span class="p">,</span> <span class="ss">:imdb_id</span><span class="p">,</span> <span class="ss">:type</span>
+</pre></div>
+
+<h3>
+<a name="find-by-imdb-id" class="anchor" href="#find-by-imdb-id"><span class="octicon octicon-link"></span></a>Find by IMDb ID</h3>
+
+<p>You can find a title by it's IMDb id using the id method:</p>
+
+<div class="highlight"><pre><span class="n">lost</span> <span class="o">=</span> <span class="no">OMDB</span><span class="o">.</span><span class="n">id</span><span class="p">(</span><span class="s1">'tt0411008'</span><span class="p">)</span>
+<span class="c1"># =&gt; {:title=&gt;"Lost", :year=&gt;"2004", :rated=&gt;"TV-14", :released=&gt;"22 Sep 2004", :runtime=&gt;"42 min", :genre=&gt;"Adventure, Drama, Fantasy, Mystery, Sci-Fi, Thriller", :director=&gt;"N/A", :writer=&gt;"J.J. Abrams, Jeffrey Lieber", :actors=&gt;"Matthew Fox, Jorge Garcia, Evangeline Lilly, Naveen Andrews", :plot=&gt;"The survivors of a plane crash are forced to live with each other on a remote island, a dangerous new world that poses unique threats of its own.", :poster=&gt;"http://ia.media-imdb.com/images/M/MV5BMjA3NzMyMzU1MV5BMl5BanBnXkFtZTcwNjc1ODUwMg@@._V1_SX300.jpg", :imdb_rating=&gt;"8.3", :imdb_votes=&gt;"160,182", :imdb_id=&gt;"tt0411008", :type=&gt;"series", :response=&gt;"True"} </span>
+<span class="n">lost</span><span class="o">.</span><span class="n">released</span>    <span class="c1"># =&gt; "22 Sep 2004"</span>
+<span class="n">lost</span><span class="o">.</span><span class="n">imdb_rating</span> <span class="c1"># =&gt; "8.3"</span>
+<span class="c1"># etc...</span>
+</pre></div>
+
+<p>This method will return a Hash of the title's properties, exactly as the title method.</p>
+
+<h2>
+<a name="running-the-tests" class="anchor" href="#running-the-tests"><span class="octicon octicon-link"></span></a>Running the Tests</h2>
+
+<p>The test suite is written using RSpec, and can be run by issuing the following command from the root of the repository:</p>
+
+<div class="highlight"><pre><span class="nv">$ </span>rspec spec
+</pre></div>
+
+<h2>
+<a name="contributing" class="anchor" href="#contributing"><span class="octicon octicon-link"></span></a>Contributing</h2>
+
+<p>Please feel free to contribute to the project by following the options below.</p>
+
+<ol>
+<li>Fork it</li>
+<li>Create your feature branch (<code>git checkout -b my-new-feature</code>)</li>
+<li>Commit your changes (<code>git commit -am 'Add some feature'</code>)</li>
+<li>Push to the branch (<code>git push origin my-new-feature</code>)</li>
+<li>Create new Pull Request</li>
+</ol>
+      </section>
+    </div>
+    <footer>
+      <p>Project maintained by <a href="https://github.com/caseyscarborough">caseyscarborough</a></p>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
