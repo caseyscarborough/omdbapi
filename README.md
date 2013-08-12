@@ -1,24 +1,30 @@
-# Omdbapi
+# omdbapi
 
-TODO: Write a gem description
+This gem is (will be) a simple and easy to use wrapper for the [omdbapi.com](http://omdbapi.com/) API.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+You can install the gem by adding it your application's Gemfile:
 
-    gem 'omdbapi'
+```ruby
+gem 'omdbapi'
+```
 
 And then execute:
 
-    $ bundle
+```bash
+$ bundle
+```
 
-Or install it yourself as:
+Or you can install it manually by issuing the following command:
 
-    $ gem install omdbapi
+```bash
+$ gem install omdbapi
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+Implementation in progress.
 
 ## Contributing
 

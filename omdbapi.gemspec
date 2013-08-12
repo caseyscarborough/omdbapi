@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Casey Scarborough"]
   spec.email         = ["caseyscarborough@gmail.com"]
   spec.description   = '[In Progress] A wrapper for the omdbapi.com movie API.'
-  spec.summary       = ''
+  spec.summary       = 'This gem provides easy access for information retrieval from omdbapi.com.'
   spec.homepage      = "https://github.com/caseyscarborough/omdb"
   spec.license       = "MIT"
 
