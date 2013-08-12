@@ -1,5 +1,7 @@
 require 'httparty'
+require 'json'
 require 'omdbapi/version'
+require 'omdbapi/default'
 require 'omdbapi/client'
 
 module OMDB
