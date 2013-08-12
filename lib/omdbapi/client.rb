@@ -9,12 +9,12 @@ module OMDB
     end
 
     def id(imdb_id) 
-      return get '/', { i: imdb_id } if imdb_id.start_with?('tt')
-      puts "Invalid IMDb ID."
+      return get '/', { i: imdb_id }
     end
 
     def find(title)
-      (get '/', { s: title }).search
+      results = get '/', { s: title }
+      results[:search] ? results[:search] : results
     end
 
     private
