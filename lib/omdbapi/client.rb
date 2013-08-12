@@ -11,6 +11,7 @@ module OMDB
     # Retrieves a movie or show based on its title.
     #
     # @param title [String] The title of the movie or show.
+    # @param options [Hash] Options for the title, plot or year.
     # @return [Hash]
     # @example
     #   OMDB.title('Game of Thrones')
@@ -58,6 +59,11 @@ module OMDB
         end
       end
 
+      # Build parameters for a request.
+      #
+      # @param title [String] The title of the show.
+      # @param options [Hash] The optional parameters.
+      # @return [Hash]
       def build_params(title, options)
         params = { t: title }
         params[:plot] = options[:plot] if options[:plot]
