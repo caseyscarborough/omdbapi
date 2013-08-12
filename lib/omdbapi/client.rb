@@ -9,7 +9,7 @@ module OMDB
     end
 
     def search(query)
-      get '/', { s: query }
+      (get '/', { s: query }).search
     end
 
     private
