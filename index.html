@@ -90,12 +90,38 @@
 <span class="ss">:actors</span><span class="p">,</span> <span class="ss">:plot</span><span class="p">,</span> <span class="ss">:poster</span><span class="p">,</span> <span class="ss">:imdb_rating</span><span class="p">,</span> <span class="ss">:imdb_votes</span><span class="p">,</span> <span class="ss">:imdb_id</span><span class="p">,</span> <span class="ss">:type</span>
 </pre></div>
 
+<p>You can also pass in the optional parameters for year or plot. Plot defaults to 'short', so the only other option is 'full'.</p>
+
+<div class="highlight"><pre><span class="no">OMDB</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">'True Grit'</span><span class="p">)</span>
+<span class="c1"># =&gt; {:title=&gt;"True Grit", :year=&gt;"2010", :rated=&gt;"PG-13"...</span>
+<span class="no">OMDB</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">'True Grit'</span><span class="p">,</span> <span class="ss">year</span><span class="p">:</span> <span class="s1">'1969'</span><span class="p">)</span>
+<span class="c1"># =&gt; {:title=&gt;"True Grit", :year=&gt;"1969", :rated=&gt;"G"...</span>
+
+<span class="c1"># Get the title with the full plot</span>
+<span class="no">OMDB</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">'Breaking Bad'</span><span class="p">,</span> <span class="ss">plot</span><span class="p">:</span> <span class="s1">'full'</span><span class="p">)</span>
+
+<span class="c1"># Get the original Italian Job with the full plot</span>
+<span class="no">OMDB</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">'The Italian Job'</span><span class="p">,</span> <span class="ss">year</span><span class="p">:</span> <span class="s1">'1969'</span><span class="p">,</span> <span class="ss">plot</span><span class="p">:</span> <span class="s1">'full'</span><span class="p">)</span>
+</pre></div>
+
+<h3>
+<a name="imdb-id" class="anchor" href="#imdb-id"><span class="octicon octicon-link"></span></a>IMDb ID</h3>
+
+<p>You can find a title by it's IMDb ID using the id method:</p>
+
+<div class="highlight"><pre><span class="n">lost</span> <span class="o">=</span> <span class="no">OMDB</span><span class="o">.</span><span class="n">id</span><span class="p">(</span><span class="s1">'tt0411008'</span><span class="p">)</span>
+<span class="c1"># =&gt; {:title=&gt;"Lost", :year=&gt;"2004", :rated=&gt;"TV-14", :released=&gt;"22 Sep 2004", :runtime=&gt;"42 min", :genre=&gt;"Adventure, Drama, Fantasy, Mystery, Sci-Fi, Thriller", :director=&gt;"N/A", :writer=&gt;"J.J. Abrams, Jeffrey Lieber", :actors=&gt;"Matthew Fox, Jorge Garcia, Evangeline Lilly, Naveen Andrews", :plot=&gt;"The survivors of a plane crash are forced to live with each other on a remote island, a dangerous new world that poses unique threats of its own.", :poster=&gt;"http://ia.media-imdb.com/images/M/MV5BMjA3NzMyMzU1MV5BMl5BanBnXkFtZTcwNjc1ODUwMg@@._V1_SX300.jpg", :imdb_rating=&gt;"8.3", :imdb_votes=&gt;"160,182", :imdb_id=&gt;"tt0411008", :type=&gt;"series", :response=&gt;"True"} </span>
+<span class="n">lost</span><span class="o">.</span><span class="n">released</span>    <span class="c1"># =&gt; "22 Sep 2004"</span>
+<span class="n">lost</span><span class="o">.</span><span class="n">imdb_rating</span> <span class="c1"># =&gt; "8.3"</span>
+<span class="c1"># etc...</span>
+</pre></div>
+
 <h3>
 <a name="search" class="anchor" href="#search"><span class="octicon octicon-link"></span></a>Search</h3>
 
-<p>You can find a title by using the find method:</p>
+<p>You can find a title by using the search method:</p>
 
-<div class="highlight"><pre><span class="n">results</span> <span class="o">=</span> <span class="no">OMDB</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">'Star Wars'</span><span class="p">)</span>
+<div class="highlight"><pre><span class="n">results</span> <span class="o">=</span> <span class="no">OMDB</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s1">'Star Wars'</span><span class="p">)</span>
 <span class="c1"># =&gt; [{:title=&gt;"Star Wars", :year=&gt;"1977", :imdb_id=&gt;"tt0076759", :type=&gt;"movie"}, {:title=&gt;"Star Wars: Episode V - The Empire Strikes Back", :year=&gt;"1980", :imdb_id=&gt;"tt0080684", :type=&gt;"movie"}, {:title=&gt;"Star Wars: Episode VI - Return of the Jedi", :year=&gt;"1983", :imdb_id=&gt;"tt0086190", :type=&gt;"movie"}, {:title=&gt;"Star Wars: Episode I - The Phantom Menace", :year=&gt;"1999", :imdb_id=&gt;"tt0120915", :type=&gt;"movie"}, {:title=&gt;"Star Wars: Episode III - Revenge of the Sith", :year=&gt;"2005", :imdb_id=&gt;"tt0121766", :type=&gt;"movie"}, {:title=&gt;"Star Wars: Episode II - Attack of the Clones", :year=&gt;"2002", :imdb_id=&gt;"tt0121765", :type=&gt;"movie"}, {:title=&gt;"Star Wars: The Clone Wars", :year=&gt;"2008", :imdb_id=&gt;"tt1185834", :type=&gt;"movie"}, {:title=&gt;"Star Wars: Clone Wars", :year=&gt;"2003", :imdb_id=&gt;"tt0361243", :type=&gt;"series"}, {:title=&gt;"Star Wars: The Clone Wars", :year=&gt;"2008", :imdb_id=&gt;"tt0458290", :type=&gt;"series"}, {:title=&gt;"The Star Wars Holiday Special", :year=&gt;"1978", :imdb_id=&gt;"tt0193524", :type=&gt;"movie"}]</span>
 <span class="n">results</span><span class="o">.</span><span class="n">each</span> <span class="p">{</span> <span class="o">|</span><span class="n">r</span><span class="o">|</span> <span class="nb">puts</span> <span class="n">r</span><span class="o">.</span><span class="n">title</span> <span class="p">}</span>
 <span class="c1"># etc...</span>
@@ -106,17 +132,7 @@
 <div class="highlight"><pre><span class="ss">:title</span><span class="p">,</span> <span class="ss">:year</span><span class="p">,</span> <span class="ss">:imdb_id</span><span class="p">,</span> <span class="ss">:type</span>
 </pre></div>
 
-<h3>
-<a name="find-by-imdb-id" class="anchor" href="#find-by-imdb-id"><span class="octicon octicon-link"></span></a>Find by IMDb ID</h3>
-
-<p>You can find a title by it's IMDb id using the id method:</p>
-
-<div class="highlight"><pre><span class="n">lost</span> <span class="o">=</span> <span class="no">OMDB</span><span class="o">.</span><span class="n">id</span><span class="p">(</span><span class="s1">'tt0411008'</span><span class="p">)</span>
-<span class="c1"># =&gt; {:title=&gt;"Lost", :year=&gt;"2004", :rated=&gt;"TV-14", :released=&gt;"22 Sep 2004", :runtime=&gt;"42 min", :genre=&gt;"Adventure, Drama, Fantasy, Mystery, Sci-Fi, Thriller", :director=&gt;"N/A", :writer=&gt;"J.J. Abrams, Jeffrey Lieber", :actors=&gt;"Matthew Fox, Jorge Garcia, Evangeline Lilly, Naveen Andrews", :plot=&gt;"The survivors of a plane crash are forced to live with each other on a remote island, a dangerous new world that poses unique threats of its own.", :poster=&gt;"http://ia.media-imdb.com/images/M/MV5BMjA3NzMyMzU1MV5BMl5BanBnXkFtZTcwNjc1ODUwMg@@._V1_SX300.jpg", :imdb_rating=&gt;"8.3", :imdb_votes=&gt;"160,182", :imdb_id=&gt;"tt0411008", :type=&gt;"series", :response=&gt;"True"} </span>
-<span class="n">lost</span><span class="o">.</span><span class="n">released</span>    <span class="c1"># =&gt; "22 Sep 2004"</span>
-<span class="n">lost</span><span class="o">.</span><span class="n">imdb_rating</span> <span class="c1"># =&gt; "8.3"</span>
-<span class="c1"># etc...</span>
-</pre></div>
+<p>If there is only a single search result, the title will be returned as a Hash with the full information, instead of the Array of shortened search results.</p>
 
 <p>This method will return a Hash of the title's properties, exactly as the title method.</p>
 
