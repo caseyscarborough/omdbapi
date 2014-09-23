@@ -12,6 +12,8 @@ module OMDB
     #
     # @param title [String] The title of the movie or show.
     # @param options [Hash] Options for the title, plot or year.
+    # @option options [Integer] :year The year of the movie.
+    # @option options [String] :plot 'short' (default), 'full'
     # @return [Hash]
     # @example
     #   OMDB.title('Game of Thrones')
@@ -28,7 +30,7 @@ module OMDB
     # @example
     #   OMDB.id('tt0944947')
     def id(imdb_id) 
-      return get '/', { i: imdb_id }
+      get '/', { i: imdb_id }
     end
 
     # Search for a movie by its title.
