@@ -43,6 +43,33 @@ describe OMDB::Client do
         end
       end
 
+      describe 'with the season and episode parameters' do
+        let(:title) { OMDB.title('True Detective', episode: 1, season: 1) }
+
+        it 'should include season and episode in the response' do
+          title.season.should eq("1")
+          title.episode.should eq("1")
+        end
+      end
+
+      describe 'with only the season parameter, missing the episode parameter' do
+        let(:title) { OMDB.title('True Detective', season: 1) }
+
+        it 'should not include season and episode in the response' do
+          expect { title.season }.to raise_error(NoMethodError)
+          expect { title.episode }.to raise_error(NoMethodError)
+        end
+      end
+
+      describe 'with only the episode parameter, missing the season parameter' do
+        let(:title) { OMDB.title('True Detective', episode: 1) }
+
+        it 'should not include season and episode in the response' do
+          expect { title.season }.to raise_error(NoMethodError)
+          expect { title.episode }.to raise_error(NoMethodError)
+        end
+      end
+
       describe 'with a movie that doesn''t exist' do
         let(:title) { OMDB.title('lsdfoweirjrpwef323423dsfkip') }
         
