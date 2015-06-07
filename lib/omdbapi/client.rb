@@ -90,7 +90,7 @@ module OMDB
       #   get '/users', { username: 'caseyscarborough' }
       def get(url, params={})
         request = self.class.get '/', query: params
-        convert_hash_keys(JSON.parse(request.parsed_response))
+        convert_hash_keys(request.parsed_response)
       end
   end
 end
