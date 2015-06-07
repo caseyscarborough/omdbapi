@@ -14,11 +14,17 @@ module OMDB
     # @param options [Hash] Options for the title, plot or year.
     # @option options [Integer] :year The year of the movie.
     # @option options [String] :plot 'short' (default), 'full'
+    # @option options [Integer] :season The season to retrieve.
+    # @option options [Integer] :episode The episode to retrieve. Requires the season parameter.
     # @return [Hash]
     # @example
     #   OMDB.title('Game of Thrones')
     def title(title, options={})
-      params = build_params(title, options)
+      params = { t: title }
+      params[:y] = options[:year] if options[:year]
+      params[:plot] = options[:plot] if options[:plot]
+      params[:season] = options[:season] if options[:season]
+      params[:episode] = options[:episode] if options[:episode]
       get '/', params
     end
 
@@ -76,7 +82,7 @@ module OMDB
       # @return [Hash]
       def build_params(title, options)
         params = { t: title }
-        params[:plot] = options[:plot] if options[:plot]
+        
         params[:y] = options[:year] if options[:year]
         params
       end
