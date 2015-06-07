@@ -59,7 +59,7 @@ This function will return a Hash with the following information about the title:
 :actors, :plot, :poster, :imdb_rating, :imdb_votes, :imdb_id, :type
 ```
 
-You can also pass in the optional parameters for year or plot. Plot defaults to 'short', so the only other option is 'full'.
+You can also pass in the optional parameters for year, plot, or season and episode. Plot defaults to 'short', so the only other option is 'full'.
 
 ```ruby
 OMDB.title('True Grit')
@@ -72,6 +72,10 @@ OMDB.title('Breaking Bad', plot: 'full')
 
 # Get the original Italian Job with the full plot
 OMDB.title('The Italian Job', year: '1969', plot: 'full')
+
+# Get a specific episode (season and episode must be included together)
+OMDB.title('True Detective', { :season => '1', :episode => '1' })
+# => {:title=>"The Long Bright Dark", :year=>"2014", :rated=>"TV-MA", :released=>"12 Jan 2014", :season=>"1", :episode=>"1", :runtime=>"58 min", :genre=>"Crime, Drama, Mystery", :director=>"Cary Fukunaga", :writer=>"Nic Pizzolatto (created by), Nic Pizzolatto", :actors=>"Matthew McConaughey, Woody Harrelson, Michelle Monaghan, Michael Potts", :plot=>"In 2012, former detective partners, Rust Cohle and Martin Hart recap one of their very first cases together involving a serial killer, back in 1995.", :language=>"English", :country=>"USA", :awards=>"N/A", :poster=>"http://ia.media-imdb.com/images/M/MV5BMTY5NjA2MjEyN15BMl5BanBnXkFtZTgwNzU2MjQ4MDE@._V1_SX300.jpg", :metascore=>"N/A", :imdb_rating=>"8.9", :imdb_votes=>"8282", :imdb_id=>"tt2657398", :series_id=>"tt2356777", :type=>"episode", :response=>"True"}
 ```
 
 ### IMDb ID
