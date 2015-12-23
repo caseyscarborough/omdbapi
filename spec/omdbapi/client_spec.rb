@@ -115,6 +115,25 @@ describe OMDB::Client do
           title.error.should be_instance_of String
         end
       end
+
+      describe 'with plot parameter' do
+
+        let(:movie_default) { OMDB.id('tt0121765') }
+        let(:movie_short) { OMDB.id('tt0121765', plot: 'short') }
+        let(:movie_full) { OMDB.id('tt0121765', plot: 'full') }
+
+        it 'should default to short plot' do
+          movie_default.plot.should eq(movie_short.plot)
+        end
+
+        it 'should have different short and full plots' do
+          movie_short.plot.should_not eq(movie_full.plot)
+        end
+
+        it 'should have a longer full plot' do
+          movie_short.plot.length.should < movie_full.plot.length
+        end
+      end
     end
 
     describe 'search' do
