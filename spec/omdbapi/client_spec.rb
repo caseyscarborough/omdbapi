@@ -55,8 +55,7 @@ describe OMDB::Client do
       describe 'with only the season parameter, missing the episode parameter' do
         let(:title) { OMDB.title('True Detective', season: 1) }
 
-        it 'should not include season and episode in the response' do
-          expect { title.season }.to raise_error(NoMethodError)
+        it 'should not include episode in the response' do
           expect { title.episode }.to raise_error(NoMethodError)
         end
       end
