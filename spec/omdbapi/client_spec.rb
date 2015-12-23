@@ -132,14 +132,14 @@ describe OMDB::Client do
       end
 
       describe 'with a single search result' do
-        let(:result) { OMDB.search('Star Wars: Episode IV - A New Hope') }
+        let(:result) { OMDB.search('Shutter Island') }
 
         it 'should return a hash of the title' do
           result.should be_instance_of Hash
         end
 
         it 'should have a title' do
-          result.title.should eq('Star Wars: Episode IV - A New Hope')
+          result.title.should eq('Shutter Island')
         end
       end
 
