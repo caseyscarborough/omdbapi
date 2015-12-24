@@ -32,11 +32,14 @@ module OMDB
     # Retrieves a movie or show based on its IMDb ID.
     #
     # @param imdb_id [String] The IMDb ID of the movie or show.
+    # @option options [String] :plot 'short' (default), 'full'
     # @return [Hash]
     # @example
     #   OMDB.id('tt0944947')
-    def id(imdb_id) 
-      get '/', { i: imdb_id }
+    def id(imdb_id, options={})
+      params = { i: imdb_id }
+      params[:plot] = options[:plot] if options[:plot]
+      get '/', params
     end
 
     # Search for a movie by its title.
