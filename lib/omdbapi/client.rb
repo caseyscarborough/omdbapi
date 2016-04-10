@@ -19,7 +19,7 @@ module OMDB
     # @return [Hash]
     # @example
     #   OMDB.title('Game of Thrones')
-    def title(title, options={})
+    def title(title, options = {})
       params = { t: title }
       params[:y] = options[:year] if options[:year]
       params[:plot] = options[:plot] if options[:plot]
@@ -28,15 +28,17 @@ module OMDB
       get '/', params
     end
 
-
     # Retrieves a movie or show based on its IMDb ID.
     #
     # @param imdb_id [String] The IMDb ID of the movie or show.
+    # @option options [Boolean] :tomatoes Include Rotten Tomatoes ratings.
     # @return [Hash]
     # @example
     #   OMDB.id('tt0944947')
-    def id(imdb_id) 
-      get '/', { i: imdb_id }
+    def id(imdb_id, options = {})
+      params = { i: imdb_id }
+      params[:tomatoes] = options[:tomatoes] if options[:tomatoes]
+      get '/', params
     end
 
     # Search for a movie by its title.
@@ -82,7 +84,6 @@ module OMDB
       # @return [Hash]
       def build_params(title, options)
         params = { t: title }
-        
         params[:y] = options[:year] if options[:year]
         params
       end
