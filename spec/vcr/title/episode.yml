@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://omdbapi.com/?episode=1&t=True%20Detective
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 16 Apr 2016 17:16:36 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dcde6afa8b10b146d7cceda80814b48321460826996; expires=Sun, 16-Apr-17
+        17:16:36 GMT; path=/; domain=.omdbapi.com; HttpOnly
+      Cache-Control:
+      - public, max-age=3600
+      Expires:
+      - Sat, 16 Apr 2016 18:17:02 GMT
+      Last-Modified:
+      - Sat, 16 Apr 2016 17:17:02 GMT
+      Vary:
+      - "*"
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 294949388f1d3798-ARN
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJUaXRsZSI6IlRydWUgRGV0ZWN0aXZlIiwiWWVhciI6IjIwMTTigJMiLCJS
+        YXRlZCI6IlRWLU1BIiwiUmVsZWFzZWQiOiIxMiBKYW4gMjAxNCIsIlJ1bnRp
+        bWUiOiI1NSBtaW4iLCJHZW5yZSI6IkNyaW1lLCBEcmFtYSwgTXlzdGVyeSIs
+        IkRpcmVjdG9yIjoiTi9BIiwiV3JpdGVyIjoiTmljIFBpenpvbGF0dG8iLCJB
+        Y3RvcnMiOiJNYXR0aGV3IE1jQ29uYXVnaGV5LCBDb2xpbiBGYXJyZWxsLCBX
+        b29keSBIYXJyZWxzb24sIFJhY2hlbCBNY0FkYW1zIiwiUGxvdCI6IkFuIGFu
+        dGhvbG9neSBzZXJpZXMgaW4gd2hpY2ggcG9saWNlIGludmVzdGlnYXRpb25z
+        IHVuZWFydGggdGhlIHBlcnNvbmFsIGFuZCBwcm9mZXNzaW9uYWwgc2VjcmV0
+        cyBvZiB0aG9zZSBpbnZvbHZlZCwgYm90aCB3aXRoaW4gYW5kIG91dHNpZGUg
+        dGhlIGxhdy4iLCJMYW5ndWFnZSI6IkVuZ2xpc2giLCJDb3VudHJ5IjoiVVNB
+        IiwiQXdhcmRzIjoiTm9taW5hdGVkIGZvciA0IEdvbGRlbiBHbG9iZXMuIEFu
+        b3RoZXIgMjYgd2lucyAmIDQ0IG5vbWluYXRpb25zLiIsIlBvc3RlciI6Imh0
+        dHA6Ly9pYS5tZWRpYS1pbWRiLmNvbS9pbWFnZXMvTS9NVjVCTVRVek5UTXdP
+        REkxT1Y1Qk1sNUJhbkJuWGtGdFpUZ3dNREl6TVRRME5URUAuX1YxX1NYMzAw
+        LmpwZyIsIk1ldGFzY29yZSI6Ik4vQSIsImltZGJSYXRpbmciOiI5LjEiLCJp
+        bWRiVm90ZXMiOiIzMDksNzE0IiwiaW1kYklEIjoidHQyMzU2Nzc3IiwiVHlw
+        ZSI6InNlcmllcyIsIlJlc3BvbnNlIjoiVHJ1ZSJ9
+    http_version: 
+  recorded_at: Sat, 16 Apr 2016 17:16:36 GMT
+recorded_with: VCR 3.0.1

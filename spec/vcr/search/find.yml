@@ -1,0 +1,205 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://omdbapi.com/?s=Star%20Wars
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 16 Apr 2016 17:33:41 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d0f45bb13af8d1b5ef90357e45b95c7631460828020; expires=Sun, 16-Apr-17
+        17:33:40 GMT; path=/; domain=.omdbapi.com; HttpOnly
+      Cache-Control:
+      - public, max-age=3004
+      Expires:
+      - Sat, 16 Apr 2016 18:24:11 GMT
+      Last-Modified:
+      - Sat, 16 Apr 2016 17:24:11 GMT
+      Vary:
+      - "*"
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 2949623aa7d43774-ARN
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJTZWFyY2giOlt7IlRpdGxlIjoiU3RhciBXYXJzOiBFcGlzb2RlIElWIC0g
+        QSBOZXcgSG9wZSIsIlllYXIiOiIxOTc3IiwiaW1kYklEIjoidHQwMDc2NzU5
+        IiwiVHlwZSI6Im1vdmllIiwiUG9zdGVyIjoiaHR0cDovL2lhLm1lZGlhLWlt
+        ZGIuY29tL2ltYWdlcy9NL01WNUJPVEl5TURZMk5HUXRPR0pqTmkwME9UazRM
+        V0ZoTURndFltRTNNMk5pWXpNMFlUVm1Ya0V5WGtGcWNHZGVRWFZ5TlRVMU5U
+        Y3dPVGtALl9WMV9TWDMwMC5qcGcifSx7IlRpdGxlIjoiU3RhciBXYXJzOiBF
+        cGlzb2RlIFYgLSBUaGUgRW1waXJlIFN0cmlrZXMgQmFjayIsIlllYXIiOiIx
+        OTgwIiwiaW1kYklEIjoidHQwMDgwNjg0IiwiVHlwZSI6Im1vdmllIiwiUG9z
+        dGVyIjoiaHR0cDovL2lhLm1lZGlhLWltZGIuY29tL2ltYWdlcy9NL01WNUJN
+        akUyTXpRd01UZ3hOMTVCTWw1QmFuQm5Ya0Z0WlRjd01EUXpOamsyT1FAQC5f
+        VjFfU1gzMDAuanBnIn0seyJUaXRsZSI6IlN0YXIgV2FyczogRXBpc29kZSBW
+        SSAtIFJldHVybiBvZiB0aGUgSmVkaSIsIlllYXIiOiIxOTgzIiwiaW1kYklE
+        IjoidHQwMDg2MTkwIiwiVHlwZSI6Im1vdmllIiwiUG9zdGVyIjoiaHR0cDov
+        L2lhLm1lZGlhLWltZGIuY29tL2ltYWdlcy9NL01WNUJNVFEwTXpJMU5qWXdP
+        RjVCTWw1QmFuQm5Ya0Z0WlRnd09EVTNORFUyTVRFQC5fVjEuX0NSOTMsOTcs
+        MTIwOSwxODYxX1NYODlfQUxfLmpwZ19WMV9TWDMwMC5qcGcifSx7IlRpdGxl
+        IjoiU3RhciBXYXJzOiBFcGlzb2RlIEkgLSBUaGUgUGhhbnRvbSBNZW5hY2Ui
+        LCJZZWFyIjoiMTk5OSIsImltZGJJRCI6InR0MDEyMDkxNSIsIlR5cGUiOiJt
+        b3ZpZSIsIlBvc3RlciI6Imh0dHA6Ly9pYS5tZWRpYS1pbWRiLmNvbS9pbWFn
+        ZXMvTS9NVjVCTVRRNE5qRXdOREEyTmw1Qk1sNUJhbkJuWGtGdFpUY3dORFV5
+        TkRRek53QEAuX1YxX1NYMzAwLmpwZyJ9LHsiVGl0bGUiOiJTdGFyIFdhcnM6
+        IEVwaXNvZGUgSUlJIC0gUmV2ZW5nZSBvZiB0aGUgU2l0aCIsIlllYXIiOiIy
+        MDA1IiwiaW1kYklEIjoidHQwMTIxNzY2IiwiVHlwZSI6Im1vdmllIiwiUG9z
+        dGVyIjoiaHR0cDovL2lhLm1lZGlhLWltZGIuY29tL2ltYWdlcy9NL01WNUJO
+        VGM0TVRjM05UUTVPRjVCTWw1QmFuQm5Ya0Z0WlRjd09UZzBOakk0TkFAQC5f
+        VjFfU1gzMDAuanBnIn0seyJUaXRsZSI6IlN0YXIgV2FyczogRXBpc29kZSBW
+        SUkgLSBUaGUgRm9yY2UgQXdha2VucyIsIlllYXIiOiIyMDE1IiwiaW1kYklE
+        IjoidHQyNDg4NDk2IiwiVHlwZSI6Im1vdmllIiwiUG9zdGVyIjoiaHR0cDov
+        L2lhLm1lZGlhLWltZGIuY29tL2ltYWdlcy9NL01WNUJPVEF6T0RFek5EQXpN
+        bDVCTWw1QmFuQm5Ya0Z0WlRnd01EVTFNVGd6TnpFQC5fVjFfU1gzMDAuanBn
+        In0seyJUaXRsZSI6IlN0YXIgV2FyczogRXBpc29kZSBJSSAtIEF0dGFjayBv
+        ZiB0aGUgQ2xvbmVzIiwiWWVhciI6IjIwMDIiLCJpbWRiSUQiOiJ0dDAxMjE3
+        NjUiLCJUeXBlIjoibW92aWUiLCJQb3N0ZXIiOiJodHRwOi8vaWEubWVkaWEt
+        aW1kYi5jb20vaW1hZ2VzL00vTVY1Qk1UWTVNakk1TlRJd05sNUJNbDVCYW5C
+        blhrRnRaVFl3TVRNMU5qZzIuX1YxX1NYMzAwLmpwZyJ9LHsiVGl0bGUiOiJT
+        dGFyIFdhcnM6IFRoZSBDbG9uZSBXYXJzIiwiWWVhciI6IjIwMDgiLCJpbWRi
+        SUQiOiJ0dDExODU4MzQiLCJUeXBlIjoibW92aWUiLCJQb3N0ZXIiOiJodHRw
+        Oi8vaWEubWVkaWEtaW1kYi5jb20vaW1hZ2VzL00vTVY1Qk1USTFNREl3TVRj
+        ek9WNUJNbDVCYW5CblhrRnRaVGN3TlRJNE1ERTNNUUBALl9WMV9TWDMwMC5q
+        cGcifSx7IlRpdGxlIjoiU3RhciBXYXJzOiBUaGUgQ2xvbmUgV2FycyIsIlll
+        YXIiOiIyMDA44oCTMjAxNSIsImltZGJJRCI6InR0MDQ1ODI5MCIsIlR5cGUi
+        OiJzZXJpZXMiLCJQb3N0ZXIiOiJodHRwOi8vaWEubWVkaWEtaW1kYi5jb20v
+        aW1hZ2VzL00vTVY1Qk1UTTBOalEyTWprME9WNUJNbDVCYW5CblhrRnRaVGN3
+        T0RRM05qYzNNZ0BALl9WMV9TWDMwMC5qcGcifSx7IlRpdGxlIjoiU3RhciBX
+        YXJzOiBDbG9uZSBXYXJzIiwiWWVhciI6IjIwMDPigJMyMDA1IiwiaW1kYklE
+        IjoidHQwMzYxMjQzIiwiVHlwZSI6InNlcmllcyIsIlBvc3RlciI6Imh0dHA6
+        Ly9pYS5tZWRpYS1pbWRiLmNvbS9pbWFnZXMvTS9NVjVCTWpFMk1qazVNemsz
+        TTE1Qk1sNUJhbkJuWGtGdFpUY3dNRGt6TVRJek1RQEAuX1YxX1NYMzAwLmpw
+        ZyJ9XSwidG90YWxSZXN1bHRzIjoiMzI0IiwiUmVzcG9uc2UiOiJUcnVlIn0=
+    http_version: 
+  recorded_at: Sat, 16 Apr 2016 17:33:41 GMT
+- request:
+    method: get
+    uri: http://omdbapi.com/?s=Star%20Wars
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 16 Apr 2016 17:33:41 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=de081dae98fe03b22a827a012d7b1d32d1460828021; expires=Sun, 16-Apr-17
+        17:33:41 GMT; path=/; domain=.omdbapi.com; HttpOnly
+      Cache-Control:
+      - public, max-age=3004
+      Expires:
+      - Sat, 16 Apr 2016 18:24:11 GMT
+      Last-Modified:
+      - Sat, 16 Apr 2016 17:24:11 GMT
+      Vary:
+      - "*"
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 2949623c1aac16be-ARN
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJTZWFyY2giOlt7IlRpdGxlIjoiU3RhciBXYXJzOiBFcGlzb2RlIElWIC0g
+        QSBOZXcgSG9wZSIsIlllYXIiOiIxOTc3IiwiaW1kYklEIjoidHQwMDc2NzU5
+        IiwiVHlwZSI6Im1vdmllIiwiUG9zdGVyIjoiaHR0cDovL2lhLm1lZGlhLWlt
+        ZGIuY29tL2ltYWdlcy9NL01WNUJPVEl5TURZMk5HUXRPR0pqTmkwME9UazRM
+        V0ZoTURndFltRTNNMk5pWXpNMFlUVm1Ya0V5WGtGcWNHZGVRWFZ5TlRVMU5U
+        Y3dPVGtALl9WMV9TWDMwMC5qcGcifSx7IlRpdGxlIjoiU3RhciBXYXJzOiBF
+        cGlzb2RlIFYgLSBUaGUgRW1waXJlIFN0cmlrZXMgQmFjayIsIlllYXIiOiIx
+        OTgwIiwiaW1kYklEIjoidHQwMDgwNjg0IiwiVHlwZSI6Im1vdmllIiwiUG9z
+        dGVyIjoiaHR0cDovL2lhLm1lZGlhLWltZGIuY29tL2ltYWdlcy9NL01WNUJN
+        akUyTXpRd01UZ3hOMTVCTWw1QmFuQm5Ya0Z0WlRjd01EUXpOamsyT1FAQC5f
+        VjFfU1gzMDAuanBnIn0seyJUaXRsZSI6IlN0YXIgV2FyczogRXBpc29kZSBW
+        SSAtIFJldHVybiBvZiB0aGUgSmVkaSIsIlllYXIiOiIxOTgzIiwiaW1kYklE
+        IjoidHQwMDg2MTkwIiwiVHlwZSI6Im1vdmllIiwiUG9zdGVyIjoiaHR0cDov
+        L2lhLm1lZGlhLWltZGIuY29tL2ltYWdlcy9NL01WNUJNVFEwTXpJMU5qWXdP
+        RjVCTWw1QmFuQm5Ya0Z0WlRnd09EVTNORFUyTVRFQC5fVjEuX0NSOTMsOTcs
+        MTIwOSwxODYxX1NYODlfQUxfLmpwZ19WMV9TWDMwMC5qcGcifSx7IlRpdGxl
+        IjoiU3RhciBXYXJzOiBFcGlzb2RlIEkgLSBUaGUgUGhhbnRvbSBNZW5hY2Ui
+        LCJZZWFyIjoiMTk5OSIsImltZGJJRCI6InR0MDEyMDkxNSIsIlR5cGUiOiJt
+        b3ZpZSIsIlBvc3RlciI6Imh0dHA6Ly9pYS5tZWRpYS1pbWRiLmNvbS9pbWFn
+        ZXMvTS9NVjVCTVRRNE5qRXdOREEyTmw1Qk1sNUJhbkJuWGtGdFpUY3dORFV5
+        TkRRek53QEAuX1YxX1NYMzAwLmpwZyJ9LHsiVGl0bGUiOiJTdGFyIFdhcnM6
+        IEVwaXNvZGUgSUlJIC0gUmV2ZW5nZSBvZiB0aGUgU2l0aCIsIlllYXIiOiIy
+        MDA1IiwiaW1kYklEIjoidHQwMTIxNzY2IiwiVHlwZSI6Im1vdmllIiwiUG9z
+        dGVyIjoiaHR0cDovL2lhLm1lZGlhLWltZGIuY29tL2ltYWdlcy9NL01WNUJO
+        VGM0TVRjM05UUTVPRjVCTWw1QmFuQm5Ya0Z0WlRjd09UZzBOakk0TkFAQC5f
+        VjFfU1gzMDAuanBnIn0seyJUaXRsZSI6IlN0YXIgV2FyczogRXBpc29kZSBW
+        SUkgLSBUaGUgRm9yY2UgQXdha2VucyIsIlllYXIiOiIyMDE1IiwiaW1kYklE
+        IjoidHQyNDg4NDk2IiwiVHlwZSI6Im1vdmllIiwiUG9zdGVyIjoiaHR0cDov
+        L2lhLm1lZGlhLWltZGIuY29tL2ltYWdlcy9NL01WNUJPVEF6T0RFek5EQXpN
+        bDVCTWw1QmFuQm5Ya0Z0WlRnd01EVTFNVGd6TnpFQC5fVjFfU1gzMDAuanBn
+        In0seyJUaXRsZSI6IlN0YXIgV2FyczogRXBpc29kZSBJSSAtIEF0dGFjayBv
+        ZiB0aGUgQ2xvbmVzIiwiWWVhciI6IjIwMDIiLCJpbWRiSUQiOiJ0dDAxMjE3
+        NjUiLCJUeXBlIjoibW92aWUiLCJQb3N0ZXIiOiJodHRwOi8vaWEubWVkaWEt
+        aW1kYi5jb20vaW1hZ2VzL00vTVY1Qk1UWTVNakk1TlRJd05sNUJNbDVCYW5C
+        blhrRnRaVFl3TVRNMU5qZzIuX1YxX1NYMzAwLmpwZyJ9LHsiVGl0bGUiOiJT
+        dGFyIFdhcnM6IFRoZSBDbG9uZSBXYXJzIiwiWWVhciI6IjIwMDgiLCJpbWRi
+        SUQiOiJ0dDExODU4MzQiLCJUeXBlIjoibW92aWUiLCJQb3N0ZXIiOiJodHRw
+        Oi8vaWEubWVkaWEtaW1kYi5jb20vaW1hZ2VzL00vTVY1Qk1USTFNREl3TVRj
+        ek9WNUJNbDVCYW5CblhrRnRaVGN3TlRJNE1ERTNNUUBALl9WMV9TWDMwMC5q
+        cGcifSx7IlRpdGxlIjoiU3RhciBXYXJzOiBUaGUgQ2xvbmUgV2FycyIsIlll
+        YXIiOiIyMDA44oCTMjAxNSIsImltZGJJRCI6InR0MDQ1ODI5MCIsIlR5cGUi
+        OiJzZXJpZXMiLCJQb3N0ZXIiOiJodHRwOi8vaWEubWVkaWEtaW1kYi5jb20v
+        aW1hZ2VzL00vTVY1Qk1UTTBOalEyTWprME9WNUJNbDVCYW5CblhrRnRaVGN3
+        T0RRM05qYzNNZ0BALl9WMV9TWDMwMC5qcGcifSx7IlRpdGxlIjoiU3RhciBX
+        YXJzOiBDbG9uZSBXYXJzIiwiWWVhciI6IjIwMDPigJMyMDA1IiwiaW1kYklE
+        IjoidHQwMzYxMjQzIiwiVHlwZSI6InNlcmllcyIsIlBvc3RlciI6Imh0dHA6
+        Ly9pYS5tZWRpYS1pbWRiLmNvbS9pbWFnZXMvTS9NVjVCTWpFMk1qazVNemsz
+        TTE1Qk1sNUJhbkJuWGtGdFpUY3dNRGt6TVRJek1RQEAuX1YxX1NYMzAwLmpw
+        ZyJ9XSwidG90YWxSZXN1bHRzIjoiMzI0IiwiUmVzcG9uc2UiOiJUcnVlIn0=
+    http_version: 
+  recorded_at: Sat, 16 Apr 2016 17:33:41 GMT
+recorded_with: VCR 3.0.1

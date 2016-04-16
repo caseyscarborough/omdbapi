@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://omdbapi.com/?s=lsdfoweirjrpwef323423dsfkip
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 16 Apr 2016 17:33:40 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d9526561af0688ea0f31d7b6d544cb0891460828020; expires=Sun, 16-Apr-17
+        17:33:40 GMT; path=/; domain=.omdbapi.com; HttpOnly
+      Cache-Control:
+      - public, max-age=3600
+      Expires:
+      - Sat, 16 Apr 2016 18:34:06 GMT
+      Last-Modified:
+      - Sat, 16 Apr 2016 17:34:06 GMT
+      Vary:
+      - "*"
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 2949623810f33708-ARN
+    body:
+      encoding: UTF-8
+      string: '{"Response":"False","Error":"Movie not found!"}'
+    http_version: 
+  recorded_at: Sat, 16 Apr 2016 17:33:40 GMT
+recorded_with: VCR 3.0.1
