@@ -2,11 +2,11 @@ require 'spec_helper'
 
 describe OMDB::Client do
   it 'should include HTTParty' do
-    OMDB::Client.should include(HTTParty)
+    expect(OMDB::Client).to include(HTTParty)
   end
 
   it 'should have the correct API endpoint' do
-    OMDB::Client.base_uri.should eq(OMDB::Default::API_ENDPOINT)
+    expect(OMDB::Client.base_uri).to eq(OMDB::Default::API_ENDPOINT)
   end
 
   describe 'methods' do
@@ -19,11 +19,11 @@ describe OMDB::Client do
         end
 
         it 'should return a hash of movie attributes' do
-          @title.should be_instance_of Hash
+          expect(@title).to be_instance_of Hash
         end
 
         it 'should contain a title' do
-          @title.title.should be_instance_of String
+          expect(@title.title).to be_instance_of String
         end
       end
 
@@ -32,7 +32,7 @@ describe OMDB::Client do
           VCR.use_cassette('title/year') do
             title1 = OMDB.title('True Grit')
             title2 = OMDB.title('True Grit', year: '1969')
-            title1.should_not eq(title2)
+            expect(title1).not_to eq(title2)
           end
         end
       end
@@ -42,7 +42,7 @@ describe OMDB::Client do
           VCR.use_cassette('title/plot') do
             title1 = OMDB.title('Game of Thrones')
             title2 = OMDB.title('Game of Thrones', plot: 'full')
-            title1.plot.should_not eq(title2.plot)
+            expect(title1.plot).not_to eq(title2.plot)
           end
         end
       end
@@ -51,8 +51,8 @@ describe OMDB::Client do
         it 'should include season and episode in the response' do
           VCR.use_cassette('title/season_and_episode') do
             title = OMDB.title('True Detective', episode: 1, season: 1)
-            title.season.should eq('1')
-            title.episode.should eq('1')
+            expect(title.season).to eq('1')
+            expect(title.episode).to eq('1')
           end
         end
       end
@@ -84,15 +84,15 @@ describe OMDB::Client do
         end
 
         it 'should return a hash' do
-          @title.should be_instance_of Hash
+          expect(@title).to be_instance_of Hash
         end
 
         it 'should return a hash with a false response' do
-          @title.response.should eq('False')
+          expect(@title.response).to eq('False')
         end
 
         it 'should return a hash with an error message' do
-          @title.error.should be_instance_of String
+          expect(@title.error).to be_instance_of String
         end
       end
     end
@@ -106,11 +106,11 @@ describe OMDB::Client do
         end
 
         it 'should return a hash of movie attributes' do
-          @title.should be_instance_of Hash
+          expect(@title).to be_instance_of Hash
         end
 
         it 'should contain a title' do
-          @title.title.should be_instance_of String
+          expect(@title.title).to be_instance_of String
         end
       end
 
@@ -122,15 +122,15 @@ describe OMDB::Client do
         end
 
         it 'should return a hash' do
-          @title.should be_instance_of Hash
+          expect(@title).to be_instance_of Hash
         end
 
         it 'should return a hash with a false response' do
-          @title.response.should eq('False')
+          expect(@title.response).to eq('False')
         end
 
         it 'should return a hash with an error message' do
-          @title.error.should be_instance_of String
+          expect(@title.error).to be_instance_of String
         end
       end
     end
@@ -144,11 +144,11 @@ describe OMDB::Client do
         end
 
         it 'should return an array' do
-          @results.should be_instance_of Array
+          expect(@results).to be_instance_of Array
         end
 
         it 'should return an array with hash contents' do
-          @results.first.should be_instance_of Hash
+          expect(@results.first).to be_instance_of Hash
         end
       end
 
@@ -160,11 +160,11 @@ describe OMDB::Client do
         end
 
         it 'should return a hash of the title' do
-          @result.should be_instance_of Hash
+          expect(@result).to be_instance_of Hash
         end
 
         it 'should have a title' do
-          @result.title.should eq('Star Wars: Episode IV - A New Hope')
+          expect(@result.title).to eq('Star Wars: Episode IV - A New Hope')
         end
       end
 
@@ -176,22 +176,22 @@ describe OMDB::Client do
         end
 
         it 'should return a hash' do
-          @results.should be_instance_of Hash
+          expect(@results).to be_instance_of Hash
         end
 
         it 'should return a hash with a false response' do
-          @results.response.should eq('False')
+          expect(@results.response).to eq('False')
         end
 
         it 'should return a hash with an error message' do
-          @results.error.should be_instance_of String
+          expect(@results.error).to be_instance_of String
         end
       end
 
       describe 'should be aliased to find' do
         it 'should be the same method' do
           VCR.use_cassette('search/find') do
-            OMDB.search('Star Wars').should eq(OMDB.find('Star Wars'))
+            expect(OMDB.search('Star Wars')).to eq(OMDB.find('Star Wars'))
           end
         end
       end
