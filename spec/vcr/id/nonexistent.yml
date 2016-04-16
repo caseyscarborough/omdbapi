@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://omdbapi.com/?i=tt1231230123
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 16 Apr 2016 17:22:38 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=db5be552af98c5d3f756110a8272f65121460827358; expires=Sun, 16-Apr-17
+        17:22:38 GMT; path=/; domain=.omdbapi.com; HttpOnly
+      Cache-Control:
+      - public, max-age=3600
+      Expires:
+      - Sat, 16 Apr 2016 18:23:04 GMT
+      Last-Modified:
+      - Sat, 16 Apr 2016 17:23:04 GMT
+      Vary:
+      - "*"
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 2949521032f93798-ARN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"Response":"False","Error":"Incorrect IMDb ID."}'
+    http_version: 
+  recorded_at: Sat, 16 Apr 2016 17:22:38 GMT
+recorded_with: VCR 3.0.1
