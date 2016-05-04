@@ -16,6 +16,7 @@ module OMDB
     # @option options [String] :plot 'short' (default), 'full'
     # @option options [Integer] :season The season to retrieve.
     # @option options [Integer] :episode The episode to retrieve. Requires the season parameter.
+    # @option options [Boolean] :tomatoes Include Rotten Tomatoes ratings.
     # @return [Hash]
     # @example
     #   OMDB.title('Game of Thrones')
@@ -25,6 +26,7 @@ module OMDB
       params[:plot] = options[:plot] if options[:plot]
       params[:season] = options[:season] if options[:season]
       params[:episode] = options[:episode] if options[:episode]
+      params[:tomatoes] = options[:tomatoes] if options[:tomatoes]
       get '/', params
     end
 
