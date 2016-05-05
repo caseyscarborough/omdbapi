@@ -95,6 +95,26 @@ describe OMDB::Client do
           expect(@title.error).to be_instance_of String
         end
       end
+
+      describe 'with the tomatoes option' do
+        before(:all) do
+          VCR.use_cassette('title/tomatoes') do
+            @title = OMDB.title('inception', :tomatoes => true)
+          end
+        end
+
+        it 'should contain tomato rating' do
+          expect(@title.tomato_rating).to be_instance_of String
+        end
+
+        it 'should contain tomato meter' do
+          expect(@title.tomato_meter).to be_instance_of String
+        end
+
+        it 'should contain tomato reviews' do
+          expect(@title.tomato_reviews).to be_instance_of String
+        end
+      end
     end
 
     describe 'id' do
