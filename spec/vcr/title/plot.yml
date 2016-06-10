@@ -19,22 +19,22 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 16 Apr 2016 17:10:06 GMT
+      - Fri, 10 Jun 2016 20:19:13 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
       - chunked
       Connection:
-      - keep-alive
+      - close
       Set-Cookie:
-      - __cfduid=d8e08e943ecf43a42c9332e8d7eb902221460826606; expires=Sun, 16-Apr-17
-        17:10:06 GMT; path=/; domain=.omdbapi.com; HttpOnly
+      - __cfduid=d16d72d802b23a0774017b7abdfd35a031465589953; expires=Sat, 10-Jun-17
+        20:19:13 GMT; path=/; domain=.omdbapi.com; HttpOnly
       Cache-Control:
-      - public, max-age=3600
+      - public, max-age=1768
       Expires:
-      - Sat, 16 Apr 2016 18:10:32 GMT
+      - Fri, 10 Jun 2016 20:48:40 GMT
       Last-Modified:
-      - Sat, 16 Apr 2016 17:10:32 GMT
+      - Fri, 10 Jun 2016 19:48:40 GMT
       Vary:
       - "*"
       X-Aspnet-Version:
@@ -46,7 +46,7 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Cf-Ray:
-      - 29493fb34bad3798-ARN
+      - 2b0f845c0f4041cf-SJC
     body:
       encoding: ASCII-8BIT
       string: !binary |-
@@ -55,22 +55,22 @@ http_interactions:
         aW1lIjoiNTYgbWluIiwiR2VucmUiOiJBZHZlbnR1cmUsIERyYW1hLCBGYW50
         YXN5IiwiRGlyZWN0b3IiOiJOL0EiLCJXcml0ZXIiOiJEYXZpZCBCZW5pb2Zm
         LCBELkIuIFdlaXNzIiwiQWN0b3JzIjoiUGV0ZXIgRGlua2xhZ2UsIExlbmEg
-        SGVhZGV5LCBFbWlsaWEgQ2xhcmtlLCBLaXQgSGFyaW5ndG9uIiwiUGxvdCI6
+        SGVhZGV5LCBLaXQgSGFyaW5ndG9uLCBFbWlsaWEgQ2xhcmtlIiwiUGxvdCI6
         IldoaWxlIGEgY2l2aWwgd2FyIGJyZXdzIGJldHdlZW4gc2V2ZXJhbCBub2Js
         ZSBmYW1pbGllcyBpbiBXZXN0ZXJvcywgdGhlIGNoaWxkcmVuIG9mIHRoZSBm
         b3JtZXIgcnVsZXJzIG9mIHRoZSBsYW5kIGF0dGVtcHQgdG8gcmlzZSB1cCB0
         byBwb3dlci4gTWVhbndoaWxlIGEgZm9yZ290dGVuIHJhY2UsIGJlbnQgb24g
-        ZGVzdHJ1Y3Rpb24sIHJldHVybiBhZnRlciB0aG91c2FuZHMgb2YgeWVhcnMg
-        aW4gdGhlIE5vcnRoLiIsIkxhbmd1YWdlIjoiRW5nbGlzaCIsIkNvdW50cnki
-        OiJVU0EiLCJBd2FyZHMiOiJXb24gMSBHb2xkZW4gR2xvYmUuIEFub3RoZXIg
-        MTcyIHdpbnMgJiAyNzggbm9taW5hdGlvbnMuIiwiUG9zdGVyIjoiaHR0cDov
-        L2lhLm1lZGlhLWltZGIuY29tL2ltYWdlcy9NL01WNUJNak01T1RRMU1UWTVO
-        bDVCTWw1QmFuQm5Ya0Z0WlRnd01qTTNOek14T0RFQC5fVjFfU1gzMDAuanBn
-        IiwiTWV0YXNjb3JlIjoiTi9BIiwiaW1kYlJhdGluZyI6IjkuNSIsImltZGJW
-        b3RlcyI6IjkzNCw0OTkiLCJpbWRiSUQiOiJ0dDA5NDQ5NDciLCJUeXBlIjoi
-        c2VyaWVzIiwiUmVzcG9uc2UiOiJUcnVlIn0=
+        ZGVzdHJ1Y3Rpb24sIHBsYW5zIHRvIHJldHVybiBhZnRlciB0aG91c2FuZHMg
+        b2YgeWVhcnMgaW4gdGhlIE5vcnRoLiIsIkxhbmd1YWdlIjoiRW5nbGlzaCIs
+        IkNvdW50cnkiOiJVU0EsIFVLIiwiQXdhcmRzIjoiV29uIDEgR29sZGVuIEds
+        b2JlLiBBbm90aGVyIDE4MyB3aW5zICYgMzA1IG5vbWluYXRpb25zLiIsIlBv
+        c3RlciI6Imh0dHA6Ly9pYS5tZWRpYS1pbWRiLmNvbS9pbWFnZXMvTS9NVjVC
+        TWpNNU9UUTFNVFk1Tmw1Qk1sNUJhbkJuWGtGdFpUZ3dNak0zTnpNeE9ERUAu
+        X1YxX1NYMzAwLmpwZyIsIk1ldGFzY29yZSI6Ik4vQSIsImltZGJSYXRpbmci
+        OiI5LjUiLCJpbWRiVm90ZXMiOiI5NzMsNDAzIiwiaW1kYklEIjoidHQwOTQ0
+        OTQ3IiwiVHlwZSI6InNlcmllcyIsIlJlc3BvbnNlIjoiVHJ1ZSJ9
     http_version: 
-  recorded_at: Sat, 16 Apr 2016 17:10:06 GMT
+  recorded_at: Fri, 10 Jun 2016 20:19:14 GMT
 - request:
     method: get
     uri: http://omdbapi.com/?plot=full&t=Game%20of%20Thrones
@@ -90,22 +90,22 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 16 Apr 2016 17:10:07 GMT
+      - Fri, 10 Jun 2016 20:19:14 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
       - chunked
       Connection:
-      - keep-alive
+      - close
       Set-Cookie:
-      - __cfduid=d5774fdb89dabda309d65a18c85babbb31460826607; expires=Sun, 16-Apr-17
-        17:10:07 GMT; path=/; domain=.omdbapi.com; HttpOnly
+      - __cfduid=d5484dfdd82a18d413cbe1d327989af7d1465589954; expires=Sat, 10-Jun-17
+        20:19:14 GMT; path=/; domain=.omdbapi.com; HttpOnly
       Cache-Control:
       - public, max-age=3600
       Expires:
-      - Sat, 16 Apr 2016 18:10:32 GMT
+      - Fri, 10 Jun 2016 21:19:12 GMT
       Last-Modified:
-      - Sat, 16 Apr 2016 17:10:32 GMT
+      - Fri, 10 Jun 2016 20:19:12 GMT
       Vary:
       - "*"
       X-Aspnet-Version:
@@ -117,7 +117,7 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Cf-Ray:
-      - 29493fb5c7a30a48-ARN
+      - 2b0f845cac212822-SJC
     body:
       encoding: ASCII-8BIT
       string: !binary |-
@@ -126,7 +126,7 @@ http_interactions:
         aW1lIjoiNTYgbWluIiwiR2VucmUiOiJBZHZlbnR1cmUsIERyYW1hLCBGYW50
         YXN5IiwiRGlyZWN0b3IiOiJOL0EiLCJXcml0ZXIiOiJEYXZpZCBCZW5pb2Zm
         LCBELkIuIFdlaXNzIiwiQWN0b3JzIjoiUGV0ZXIgRGlua2xhZ2UsIExlbmEg
-        SGVhZGV5LCBFbWlsaWEgQ2xhcmtlLCBLaXQgSGFyaW5ndG9uIiwiUGxvdCI6
+        SGVhZGV5LCBLaXQgSGFyaW5ndG9uLCBFbWlsaWEgQ2xhcmtlIiwiUGxvdCI6
         Ik5lZCBTdGFyaywgTG9yZCBvZiBXaW50ZXJmZWxsLCBiZWNvbWVzIHRoZSBI
         YW5kIG9mIHRoZSBLaW5nIGFmdGVyIHRoZSBmb3JtZXIgSGFuZCwgSm9uIEFy
         cnluLCBoYXMgcGFzc2VkIGF3YXkuIEJ1dCBiZWZvcmUgTmVkIGdvZXMgdG8g
@@ -136,14 +136,14 @@ http_interactions:
         ZCB3YXMgbXVyZGVyZWQsIGFuZCBpdCBpcyB1cCB0byBOZWQgdG8gZmluZCBv
         dXQgd2hhdCdzIGdvaW5nIG9uLiBCdXQgdGhhdCBpc24ndCBldmVyeXRoaW5n
         LiBUaGUgV2hpdGUgV2Fsa2VycyBoYXZlIGJlZW4gc2VlbiwgYW5kIHRoZXkg
-        c2VlbSB0byBnbyBkb3duIHNvdXRoLiIsIkxhbmd1YWdlIjoiRW5nbGlzaCIs
-        IkNvdW50cnkiOiJVU0EiLCJBd2FyZHMiOiJXb24gMSBHb2xkZW4gR2xvYmUu
-        IEFub3RoZXIgMTcyIHdpbnMgJiAyNzggbm9taW5hdGlvbnMuIiwiUG9zdGVy
-        IjoiaHR0cDovL2lhLm1lZGlhLWltZGIuY29tL2ltYWdlcy9NL01WNUJNak01
-        T1RRMU1UWTVObDVCTWw1QmFuQm5Ya0Z0WlRnd01qTTNOek14T0RFQC5fVjFf
-        U1gzMDAuanBnIiwiTWV0YXNjb3JlIjoiTi9BIiwiaW1kYlJhdGluZyI6Ijku
-        NSIsImltZGJWb3RlcyI6IjkzNCw0OTkiLCJpbWRiSUQiOiJ0dDA5NDQ5NDci
-        LCJUeXBlIjoic2VyaWVzIiwiUmVzcG9uc2UiOiJUcnVlIn0=
+        c2VlbSB0byBnbyBkb3duIHNvdXRoIiwiTGFuZ3VhZ2UiOiJFbmdsaXNoIiwi
+        Q291bnRyeSI6IlVTQSwgVUsiLCJBd2FyZHMiOiJXb24gMSBHb2xkZW4gR2xv
+        YmUuIEFub3RoZXIgMTgzIHdpbnMgJiAzMDUgbm9taW5hdGlvbnMuIiwiUG9z
+        dGVyIjoiaHR0cDovL2lhLm1lZGlhLWltZGIuY29tL2ltYWdlcy9NL01WNUJN
+        ak01T1RRMU1UWTVObDVCTWw1QmFuQm5Ya0Z0WlRnd01qTTNOek14T0RFQC5f
+        VjFfU1gzMDAuanBnIiwiTWV0YXNjb3JlIjoiTi9BIiwiaW1kYlJhdGluZyI6
+        IjkuNSIsImltZGJWb3RlcyI6Ijk3Myw0MDMiLCJpbWRiSUQiOiJ0dDA5NDQ5
+        NDciLCJUeXBlIjoic2VyaWVzIiwiUmVzcG9uc2UiOiJUcnVlIn0=
     http_version: 
-  recorded_at: Sat, 16 Apr 2016 17:10:07 GMT
-recorded_with: VCR 3.0.1
+  recorded_at: Fri, 10 Jun 2016 20:19:14 GMT
+recorded_with: VCR 3.0.3

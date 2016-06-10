@@ -19,22 +19,22 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 16 Apr 2016 17:22:38 GMT
+      - Fri, 10 Jun 2016 20:19:15 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
       - chunked
       Connection:
-      - keep-alive
+      - close
       Set-Cookie:
-      - __cfduid=db5be552af98c5d3f756110a8272f65121460827358; expires=Sun, 16-Apr-17
-        17:22:38 GMT; path=/; domain=.omdbapi.com; HttpOnly
+      - __cfduid=d5451837e6e70b52c90636d98a71ab3241465589955; expires=Sat, 10-Jun-17
+        20:19:15 GMT; path=/; domain=.omdbapi.com; HttpOnly
       Cache-Control:
       - public, max-age=3600
       Expires:
-      - Sat, 16 Apr 2016 18:23:04 GMT
+      - Fri, 10 Jun 2016 21:19:13 GMT
       Last-Modified:
-      - Sat, 16 Apr 2016 17:23:04 GMT
+      - Fri, 10 Jun 2016 20:19:13 GMT
       Vary:
       - "*"
       X-Aspnet-Version:
@@ -46,10 +46,10 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Cf-Ray:
-      - 2949521032f93798-ARN
+      - 2b0f8463ca9d012b-SJC
     body:
       encoding: ASCII-8BIT
       string: '{"Response":"False","Error":"Incorrect IMDb ID."}'
     http_version: 
-  recorded_at: Sat, 16 Apr 2016 17:22:38 GMT
-recorded_with: VCR 3.0.1
+  recorded_at: Fri, 10 Jun 2016 20:19:15 GMT
+recorded_with: VCR 3.0.3

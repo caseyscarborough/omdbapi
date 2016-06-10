@@ -19,22 +19,22 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 16 Apr 2016 17:34:21 GMT
+      - Fri, 10 Jun 2016 20:19:13 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
       - chunked
       Connection:
-      - keep-alive
+      - close
       Set-Cookie:
-      - __cfduid=d85dcf404128afb68772a045b4d5bd3761460828061; expires=Sun, 16-Apr-17
-        17:34:21 GMT; path=/; domain=.omdbapi.com; HttpOnly
+      - __cfduid=dff811992f618e7e9c901f0100511a0181465589953; expires=Sat, 10-Jun-17
+        20:19:13 GMT; path=/; domain=.omdbapi.com; HttpOnly
       Cache-Control:
-      - public, max-age=639
+      - public, max-age=959
       Expires:
-      - Sat, 16 Apr 2016 17:45:26 GMT
+      - Fri, 10 Jun 2016 20:35:10 GMT
       Last-Modified:
-      - Sat, 16 Apr 2016 16:45:26 GMT
+      - Fri, 10 Jun 2016 19:35:10 GMT
       Vary:
       - "*"
       X-Aspnet-Version:
@@ -46,12 +46,12 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Cf-Ray:
-      - 294963369a9816be-ARN
+      - 2b0f8459291e1e83-SJC
     body:
       encoding: ASCII-8BIT
       string: '{"Title":"Star Wars","Year":"1983","Rated":"N/A","Released":"01 May
         1983","Runtime":"N/A","Genre":"Action, Adventure, Sci-Fi","Director":"N/A","Writer":"N/A","Actors":"Harrison
-        Ford, Alec Guinness, Mark Hamill, James Earl Jones","Plot":"N/A","Language":"English","Country":"USA","Awards":"N/A","Poster":"N/A","Metascore":"N/A","imdbRating":"7.9","imdbVotes":"342","imdbID":"tt0251413","Type":"game","Response":"True"}'
+        Ford, Alec Guinness, Mark Hamill, James Earl Jones","Plot":"N/A","Language":"English","Country":"USA","Awards":"N/A","Poster":"N/A","Metascore":"N/A","imdbRating":"7.9","imdbVotes":"344","imdbID":"tt0251413","Type":"game","Response":"True"}'
     http_version: 
-  recorded_at: Sat, 16 Apr 2016 17:34:21 GMT
-recorded_with: VCR 3.0.1
+  recorded_at: Fri, 10 Jun 2016 20:19:13 GMT
+recorded_with: VCR 3.0.3
