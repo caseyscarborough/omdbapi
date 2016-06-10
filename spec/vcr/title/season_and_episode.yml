@@ -19,22 +19,22 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 16 Apr 2016 17:11:23 GMT
+      - Fri, 10 Jun 2016 20:21:28 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
       - chunked
       Connection:
-      - keep-alive
+      - close
       Set-Cookie:
-      - __cfduid=dc956a2d8b89bdcbcaf484d791b4f39501460826682; expires=Sun, 16-Apr-17
-        17:11:22 GMT; path=/; domain=.omdbapi.com; HttpOnly
+      - __cfduid=d9f8126cd4b7aa3390b802358a39df7801465590088; expires=Sat, 10-Jun-17
+        20:21:28 GMT; path=/; domain=.omdbapi.com; HttpOnly
       Cache-Control:
       - public, max-age=3600
       Expires:
-      - Sat, 16 Apr 2016 18:11:48 GMT
+      - Fri, 10 Jun 2016 21:21:26 GMT
       Last-Modified:
-      - Sat, 16 Apr 2016 17:11:48 GMT
+      - Fri, 10 Jun 2016 20:21:26 GMT
       Vary:
       - "*"
       X-Aspnet-Version:
@@ -46,7 +46,7 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Cf-Ray:
-      - 2949418fd6080a48-ARN
+      - 2b0f87a52e8b287c-SJC
     body:
       encoding: ASCII-8BIT
       string: '{"Title":"The Long Bright Dark","Year":"2014","Rated":"TV-MA","Released":"12
@@ -55,7 +55,7 @@ http_interactions:
         by), Nic Pizzolatto","Actors":"Matthew McConaughey, Woody Harrelson, Michelle
         Monaghan, Michael Potts","Plot":"In 2012, former detective partners, Rust
         Cohle and Martin Hart recap one of their very first cases together involving
-        a serial killer, back in 1995.","Language":"English","Country":"USA","Awards":"N/A","Poster":"http://ia.media-imdb.com/images/M/MV5BMTY5NjA2MjEyN15BMl5BanBnXkFtZTgwNzU2MjQ4MDE@._V1_SX300.jpg","Metascore":"N/A","imdbRating":"9.0","imdbVotes":"10670","imdbID":"tt2657398","seriesID":"tt2356777","Type":"episode","Response":"True"}'
+        a serial killer, back in 1995.","Language":"English","Country":"USA","Awards":"N/A","Poster":"http://ia.media-imdb.com/images/M/MV5BMTY5NjA2MjEyN15BMl5BanBnXkFtZTgwNzU2MjQ4MDE@._V1_SX300.jpg","Metascore":"N/A","imdbRating":"9.0","imdbVotes":"10914","imdbID":"tt2657398","seriesID":"tt2356777","Type":"episode","Response":"True"}'
     http_version: 
-  recorded_at: Sat, 16 Apr 2016 17:11:23 GMT
-recorded_with: VCR 3.0.1
+  recorded_at: Fri, 10 Jun 2016 20:21:28 GMT
+recorded_with: VCR 3.0.3

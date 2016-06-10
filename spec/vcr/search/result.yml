@@ -19,22 +19,22 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 16 Apr 2016 17:32:34 GMT
+      - Fri, 10 Jun 2016 20:19:16 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
       - chunked
       Connection:
-      - keep-alive
+      - close
       Set-Cookie:
-      - __cfduid=df52970b1ed512af3e856dd6a7d4305aa1460827954; expires=Sun, 16-Apr-17
-        17:32:34 GMT; path=/; domain=.omdbapi.com; HttpOnly
+      - __cfduid=d7cc1bb0698b25cbf70bcbe75cb32053d1465589955; expires=Sat, 10-Jun-17
+        20:19:15 GMT; path=/; domain=.omdbapi.com; HttpOnly
       Cache-Control:
-      - public, max-age=3586
+      - public, max-age=3600
       Expires:
-      - Sat, 16 Apr 2016 18:32:46 GMT
+      - Fri, 10 Jun 2016 21:19:14 GMT
       Last-Modified:
-      - Sat, 16 Apr 2016 17:32:46 GMT
+      - Fri, 10 Jun 2016 20:19:14 GMT
       Vary:
       - "*"
       X-Aspnet-Version:
@@ -46,12 +46,12 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Cf-Ray:
-      - 294960988c320a60-ARN
+      - 2b0f8468469c28ac-SJC
     body:
       encoding: ASCII-8BIT
       string: '{"Search":[{"Title":"Star Wars: Episode IV - A New Hope","Year":"1977","imdbID":"tt0076759","Type":"movie","Poster":"http://ia.media-imdb.com/images/M/MV5BOTIyMDY2NGQtOGJjNi00OTk4LWFhMDgtYmE3M2NiYzM0YTVmXkEyXkFqcGdeQXVyNTU1NTcwOTk@._V1_SX300.jpg"}],"totalResults":"1","Response":"True"}'
     http_version: 
-  recorded_at: Sat, 16 Apr 2016 17:32:34 GMT
+  recorded_at: Fri, 10 Jun 2016 20:19:16 GMT
 - request:
     method: get
     uri: http://omdbapi.com/?t=Star%20Wars:%20Episode%20IV%20-%20A%20New%20Hope
@@ -71,22 +71,22 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 16 Apr 2016 17:32:34 GMT
+      - Fri, 10 Jun 2016 20:19:16 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
       - chunked
       Connection:
-      - keep-alive
+      - close
       Set-Cookie:
-      - __cfduid=da0a12579295fd8e8f66117ccedd3487d1460827954; expires=Sun, 16-Apr-17
-        17:32:34 GMT; path=/; domain=.omdbapi.com; HttpOnly
+      - __cfduid=da7258e3fe903e2234610956a808e9f751465589956; expires=Sat, 10-Jun-17
+        20:19:16 GMT; path=/; domain=.omdbapi.com; HttpOnly
       Cache-Control:
-      - public, max-age=3587
+      - public, max-age=3161
       Expires:
-      - Sat, 16 Apr 2016 18:32:47 GMT
+      - Fri, 10 Jun 2016 21:11:55 GMT
       Last-Modified:
-      - Sat, 16 Apr 2016 17:32:47 GMT
+      - Fri, 10 Jun 2016 20:11:55 GMT
       Vary:
       - "*"
       X-Aspnet-Version:
@@ -98,7 +98,7 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Cf-Ray:
-      - 2949609aca203774-ARN
+      - 2b0f8469682911c5-SJC
     body:
       encoding: ASCII-8BIT
       string: '{"Title":"Star Wars: Episode IV - A New Hope","Year":"1977","Rated":"PG","Released":"25
@@ -108,7 +108,7 @@ http_interactions:
         a cocky pilot, a wookiee and two droids to save the galaxy from the Empire''s
         world-destroying battle-station, while also attempting to rescue Princess
         Leia from the evil Darth Vader.","Language":"English","Country":"USA","Awards":"Won
-        6 Oscars. Another 38 wins & 28 nominations.","Poster":"http://ia.media-imdb.com/images/M/MV5BOTIyMDY2NGQtOGJjNi00OTk4LWFhMDgtYmE3M2NiYzM0YTVmXkEyXkFqcGdeQXVyNTU1NTcwOTk@._V1_SX300.jpg","Metascore":"92","imdbRating":"8.7","imdbVotes":"875,151","imdbID":"tt0076759","Type":"movie","Response":"True"}'
+        6 Oscars. Another 39 wins & 28 nominations.","Poster":"http://ia.media-imdb.com/images/M/MV5BOTIyMDY2NGQtOGJjNi00OTk4LWFhMDgtYmE3M2NiYzM0YTVmXkEyXkFqcGdeQXVyNTU1NTcwOTk@._V1_SX300.jpg","Metascore":"92","imdbRating":"8.7","imdbVotes":"894,008","imdbID":"tt0076759","Type":"movie","Response":"True"}'
     http_version: 
-  recorded_at: Sat, 16 Apr 2016 17:32:34 GMT
-recorded_with: VCR 3.0.1
+  recorded_at: Fri, 10 Jun 2016 20:19:16 GMT
+recorded_with: VCR 3.0.3

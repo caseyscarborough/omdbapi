@@ -19,22 +19,22 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 16 Apr 2016 17:33:40 GMT
+      - Fri, 10 Jun 2016 20:19:14 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
       - '47'
       Connection:
-      - keep-alive
+      - close
       Set-Cookie:
-      - __cfduid=dd94c25e191c69d49bc20a4744cdeef071460828019; expires=Sun, 16-Apr-17
-        17:33:39 GMT; path=/; domain=.omdbapi.com; HttpOnly
+      - __cfduid=d844ff6dce7b48821bfe9fabea23c67f21465589954; expires=Sat, 10-Jun-17
+        20:19:14 GMT; path=/; domain=.omdbapi.com; HttpOnly
       Cache-Control:
-      - public, max-age=2697
+      - public, max-age=3600
       Expires:
-      - Sat, 16 Apr 2016 18:19:02 GMT
+      - Fri, 10 Jun 2016 21:19:12 GMT
       Last-Modified:
-      - Sat, 16 Apr 2016 17:19:02 GMT
+      - Fri, 10 Jun 2016 20:19:12 GMT
       Vary:
       - "*"
       X-Aspnet-Version:
@@ -46,10 +46,10 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Cf-Ray:
-      - 29496234b2cf375c-ARN
+      - 2b0f8460492311c5-SJC
     body:
       encoding: UTF-8
       string: '{"Response":"False","Error":"Movie not found!"}'
     http_version: 
-  recorded_at: Sat, 16 Apr 2016 17:33:40 GMT
-recorded_with: VCR 3.0.1
+  recorded_at: Fri, 10 Jun 2016 20:19:14 GMT
+recorded_with: VCR 3.0.3

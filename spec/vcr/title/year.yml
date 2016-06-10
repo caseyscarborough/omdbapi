@@ -19,22 +19,22 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 16 Apr 2016 17:09:08 GMT
+      - Fri, 10 Jun 2016 20:19:13 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
       - chunked
       Connection:
-      - keep-alive
+      - close
       Set-Cookie:
-      - __cfduid=da9755df9dd8c84170e3222c321b3396f1460826548; expires=Sun, 16-Apr-17
-        17:09:08 GMT; path=/; domain=.omdbapi.com; HttpOnly
+      - __cfduid=d56e07752df92344fb6b7880f5f4ba48e1465589953; expires=Sat, 10-Jun-17
+        20:19:13 GMT; path=/; domain=.omdbapi.com; HttpOnly
       Cache-Control:
       - public, max-age=3600
       Expires:
-      - Sat, 16 Apr 2016 18:09:34 GMT
+      - Fri, 10 Jun 2016 21:19:11 GMT
       Last-Modified:
-      - Sat, 16 Apr 2016 17:09:34 GMT
+      - Fri, 10 Jun 2016 20:19:11 GMT
       Vary:
       - "*"
       X-Aspnet-Version:
@@ -46,7 +46,7 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Cf-Ray:
-      - 29493e4810f136f0-ARN
+      - 2b0f8459bdc01edd-SJC
     body:
       encoding: ASCII-8BIT
       string: '{"Title":"True Grit","Year":"2010","Rated":"PG-13","Released":"22 Dec
@@ -55,9 +55,9 @@ http_interactions:
         Charles Portis (novel)","Actors":"Jeff Bridges, Hailee Steinfeld, Matt Damon,
         Josh Brolin","Plot":"A tough U.S. Marshal helps a stubborn teenager track
         down her father''s murderer.","Language":"English","Country":"USA","Awards":"Nominated
-        for 10 Oscars. Another 36 wins & 147 nominations.","Poster":"http://ia.media-imdb.com/images/M/MV5BMjIxNjAzODQ0N15BMl5BanBnXkFtZTcwODY2MjMyNA@@._V1_SX300.jpg","Metascore":"80","imdbRating":"7.7","imdbVotes":"234,121","imdbID":"tt1403865","Type":"movie","Response":"True"}'
+        for 10 Oscars. Another 37 wins & 148 nominations.","Poster":"http://ia.media-imdb.com/images/M/MV5BMjIxNjAzODQ0N15BMl5BanBnXkFtZTcwODY2MjMyNA@@._V1_SX300.jpg","Metascore":"80","imdbRating":"7.7","imdbVotes":"237,630","imdbID":"tt1403865","Type":"movie","Response":"True"}'
     http_version: 
-  recorded_at: Sat, 16 Apr 2016 17:09:08 GMT
+  recorded_at: Fri, 10 Jun 2016 20:19:13 GMT
 - request:
     method: get
     uri: http://omdbapi.com/?t=True%20Grit&y=1969
@@ -77,22 +77,22 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 16 Apr 2016 17:09:09 GMT
+      - Fri, 10 Jun 2016 20:19:13 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
       - chunked
       Connection:
-      - keep-alive
+      - close
       Set-Cookie:
-      - __cfduid=d47de8afa948291ba019b92b1f638db781460826548; expires=Sun, 16-Apr-17
-        17:09:08 GMT; path=/; domain=.omdbapi.com; HttpOnly
+      - __cfduid=d16d72d802b23a0774017b7abdfd35a031465589953; expires=Sat, 10-Jun-17
+        20:19:13 GMT; path=/; domain=.omdbapi.com; HttpOnly
       Cache-Control:
-      - public, max-age=3588
+      - public, max-age=3600
       Expires:
-      - Sat, 16 Apr 2016 18:09:23 GMT
+      - Fri, 10 Jun 2016 21:19:11 GMT
       Last-Modified:
-      - Sat, 16 Apr 2016 17:09:23 GMT
+      - Fri, 10 Jun 2016 20:19:11 GMT
       Vary:
       - "*"
       X-Aspnet-Version:
@@ -104,7 +104,7 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Cf-Ray:
-      - 29493e4abcf03744-ARN
+      - 2b0f845ab4c941cf-SJC
     body:
       encoding: ASCII-8BIT
       string: '{"Title":"True Grit","Year":"1969","Rated":"M","Released":"11 Jun 1969","Runtime":"128
@@ -113,7 +113,7 @@ http_interactions:
         Campbell, Kim Darby, Jeremy Slate","Plot":"A drunken, hard-nosed U.S. Marshal
         and a Texas Ranger help a stubborn teenager track down her father''s murderer
         in Indian territory.","Language":"English","Country":"USA","Awards":"Won 1
-        Oscar. Another 5 wins & 7 nominations.","Poster":"http://ia.media-imdb.com/images/M/MV5BMTYwNTE3NDYzOV5BMl5BanBnXkFtZTcwNTU5MzY0MQ@@._V1_SX300.jpg","Metascore":"N/A","imdbRating":"7.4","imdbVotes":"32,382","imdbID":"tt0065126","Type":"movie","Response":"True"}'
+        Oscar. Another 5 wins & 7 nominations.","Poster":"http://ia.media-imdb.com/images/M/MV5BMTYwNTE3NDYzOV5BMl5BanBnXkFtZTcwNTU5MzY0MQ@@._V1_SX300.jpg","Metascore":"N/A","imdbRating":"7.4","imdbVotes":"32,624","imdbID":"tt0065126","Type":"movie","Response":"True"}'
     http_version: 
-  recorded_at: Sat, 16 Apr 2016 17:09:09 GMT
-recorded_with: VCR 3.0.1
+  recorded_at: Fri, 10 Jun 2016 20:19:13 GMT
+recorded_with: VCR 3.0.3
