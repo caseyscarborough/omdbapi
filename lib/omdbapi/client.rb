@@ -23,7 +23,6 @@ module OMDB
     def title(title, options = {})
       options.merge!(title: title)
       params = build_params(options)
-      puts "PARAMS: #{params}"
       get '/', params
     end
 
