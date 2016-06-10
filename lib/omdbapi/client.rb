@@ -21,12 +21,8 @@ module OMDB
     # @example
     #   OMDB.title('Game of Thrones')
     def title(title, options = {})
-      params = { t: title }
-      params[:y] = options[:year] if options[:year]
-      params[:plot] = options[:plot] if options[:plot]
-      params[:season] = options[:season] if options[:season]
-      params[:episode] = options[:episode] if options[:episode]
-      params[:tomatoes] = options[:tomatoes] if options[:tomatoes]
+      options.merge(title: title)
+      params = build_params(options)
       get '/', params
     end
 
@@ -38,8 +34,8 @@ module OMDB
     # @example
     #   OMDB.id('tt0944947')
     def id(imdb_id, options = {})
-      params = { i: imdb_id }
-      params[:tomatoes] = options[:tomatoes] if options[:tomatoes]
+      options.merge{ id: imdb_id }
+      params = build_params(options)
       get '/', params
     end
 
@@ -81,12 +77,17 @@ module OMDB
 
       # Build parameters for a request.
       #
-      # @param title [String] The title of the show.
       # @param options [Hash] The optional parameters.
       # @return [Hash]
-      def build_params(title, options)
-        params = { t: title }
+      def build_params(options)
+        params = {}
+        params[:t] = options[:title] if options[:title]
+        params[:i] = options[:id] if options[:id]
         params[:y] = options[:year] if options[:year]
+        params[:plot] = options[:plot] if options[:plot]
+        params[:season] = options[:season] if options[:season]
+        params[:episode] = options[:episode] if options[:episode]
+        params[:tomatoes] = options[:tomatoes] if options[:tomatoes]
         params
       end
 
