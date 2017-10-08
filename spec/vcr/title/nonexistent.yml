@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://omdbapi.com/?t=lsdfoweirjrpwef323423dsfkip
+    uri: http://omdbapi.com/?apikey=<OMDB_API_KEY>&t=lsdfoweirjrpwef323423dsfkip
     body:
       encoding: US-ASCII
       string: ''
@@ -19,22 +19,22 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 10 Jun 2016 20:19:14 GMT
+      - Sun, 08 Oct 2017 17:11:48 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
       - '47'
       Connection:
-      - close
+      - keep-alive
       Set-Cookie:
-      - __cfduid=d844ff6dce7b48821bfe9fabea23c67f21465589954; expires=Sat, 10-Jun-17
-        20:19:14 GMT; path=/; domain=.omdbapi.com; HttpOnly
+      - __cfduid=db0c28b77349b1535a6db74e4384f37621507482708; expires=Mon, 08-Oct-18
+        17:11:48 GMT; path=/; domain=.omdbapi.com; HttpOnly
       Cache-Control:
       - public, max-age=3600
       Expires:
-      - Fri, 10 Jun 2016 21:19:12 GMT
+      - Sun, 08 Oct 2017 18:11:48 GMT
       Last-Modified:
-      - Fri, 10 Jun 2016 20:19:12 GMT
+      - Sun, 08 Oct 2017 17:11:48 GMT
       Vary:
       - "*"
       X-Aspnet-Version:
@@ -46,10 +46,10 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Cf-Ray:
-      - 2b0f8460492311c5-SJC
+      - 3aaab8b0f1a429e9-SEA
     body:
       encoding: UTF-8
       string: '{"Response":"False","Error":"Movie not found!"}'
     http_version: 
-  recorded_at: Fri, 10 Jun 2016 20:19:14 GMT
+  recorded_at: Sun, 08 Oct 2017 17:11:48 GMT
 recorded_with: VCR 3.0.3

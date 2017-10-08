@@ -9,6 +9,34 @@ describe OMDB::Client do
     expect(OMDB::Client.base_uri).to eq(OMDB::Default::API_ENDPOINT)
   end
 
+  describe 'api key' do
+    it "returns the instance variable if set" do
+      OMDB.api_key = 'secret'
+      expect(OMDB.api_key).to eq('secret')
+    end
+
+    it "returns the the ENV var OMDB_API_KEY if instance variable not set" do
+      OMDB.api_key = nil
+      expect(ENV).to receive(:[]).with('OMDB_API_KEY').and_return('envsecret')
+      expect(OMDB.api_key).to eq('envsecret')
+    end
+  end
+
+  describe 'client' do
+    it "instantiates a Client with the api key" do
+      OMDB.api_key = 'secret'
+      expect(OMDB::Client).to receive(:new).with(api_key: 'secret')
+      OMDB.client
+    end
+
+    it "returns the cached client if available" do
+      OMDB.api_key = 'secret'
+      OMDB.client
+      expect(OMDB::Client).not_to receive(:new)
+      OMDB.client
+    end
+  end
+
   describe 'methods' do
     describe 'title' do
       describe 'with a movie that exists' do

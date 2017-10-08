@@ -12,8 +12,21 @@ module OMDB
     #
     # return [OMDB::Client] API Wrapper
     def client
-      @client = Client.new unless @client
+      @client = Client.new(api_key: api_key) unless @client
       @client
+    end
+
+    # Return the API key or the ENV var OMDB_API_KEY to be used in all future
+    # calls.
+    #
+    # return [String] API Key
+    def api_key
+      @api_key || ENV['OMDB_API_KEY']
+    end
+
+    # Set the API key to be used in all future calls.
+    def api_key=(val)
+      @api_key = val
     end
 
     private

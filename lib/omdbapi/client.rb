@@ -8,6 +8,10 @@ module OMDB
     include HTTParty
     base_uri OMDB::Default::API_ENDPOINT
 
+    def initialize(api_key:)
+      @api_key = api_key
+    end
+
     # Retrieves a movie or show based on its title.
     #
     # @param title [String] The title of the movie or show.
@@ -100,7 +104,7 @@ module OMDB
       # @example
       #   get '/users', { username: 'caseyscarborough' }
       def get(url, params={})
-        request = self.class.get '/', query: params
+        request = self.class.get '/', query: params.merge(apikey: @api_key)
         convert_hash_keys(request.parsed_response)
       end
   end

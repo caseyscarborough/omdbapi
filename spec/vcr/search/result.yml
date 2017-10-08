@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://omdbapi.com/?s=Star%20Wars%20Episode%20IV%20A%20New%20Hope
+    uri: http://omdbapi.com/?apikey=<OMDB_API_KEY>&s=Star%20Wars%20Episode%20IV%20A%20New%20Hope
     body:
       encoding: US-ASCII
       string: ''
@@ -19,22 +19,74 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 10 Jun 2016 20:19:16 GMT
+      - Sun, 08 Oct 2017 17:12:49 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
       - chunked
       Connection:
-      - close
+      - keep-alive
       Set-Cookie:
-      - __cfduid=d7cc1bb0698b25cbf70bcbe75cb32053d1465589955; expires=Sat, 10-Jun-17
-        20:19:15 GMT; path=/; domain=.omdbapi.com; HttpOnly
+      - __cfduid=dfe972d0c8f58e38f5360849a6e1ede471507482769; expires=Mon, 08-Oct-18
+        17:12:49 GMT; path=/; domain=.omdbapi.com; HttpOnly
+      Cache-Control:
+      - public, max-age=3508
+      Expires:
+      - Sun, 08 Oct 2017 18:11:17 GMT
+      Last-Modified:
+      - Sun, 08 Oct 2017 17:11:17 GMT
+      Vary:
+      - "*"
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 3aaaba2bb2c82a79-SEA
+    body:
+      encoding: ASCII-8BIT
+      string: '{"Search":[{"Title":"Star Wars: Episode IV - A New Hope","Year":"1977","imdbID":"tt0076759","Type":"movie","Poster":"https://images-na.ssl-images-amazon.com/images/M/MV5BYTUwNTdiMzMtNThmNS00ODUzLThlMDMtMTM5Y2JkNWJjOGQ2XkEyXkFqcGdeQXVyNzQ1ODk3MTQ@._V1_SX300.jpg"}],"totalResults":"1","Response":"True"}'
+    http_version: 
+  recorded_at: Sun, 08 Oct 2017 17:12:49 GMT
+- request:
+    method: get
+    uri: http://omdbapi.com/?apikey=<OMDB_API_KEY>&t=Star%20Wars:%20Episode%20IV%20-%20A%20New%20Hope
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 08 Oct 2017 17:12:49 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d9bf6019ef11b0892c4c0ea426f2166a91507482769; expires=Mon, 08-Oct-18
+        17:12:49 GMT; path=/; domain=.omdbapi.com; HttpOnly
       Cache-Control:
       - public, max-age=3600
       Expires:
-      - Fri, 10 Jun 2016 21:19:14 GMT
+      - Sun, 08 Oct 2017 18:12:49 GMT
       Last-Modified:
-      - Fri, 10 Jun 2016 20:19:14 GMT
+      - Sun, 08 Oct 2017 17:12:49 GMT
       Vary:
       - "*"
       X-Aspnet-Version:
@@ -46,69 +98,19 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Cf-Ray:
-      - 2b0f8468469c28ac-SJC
-    body:
-      encoding: ASCII-8BIT
-      string: '{"Search":[{"Title":"Star Wars: Episode IV - A New Hope","Year":"1977","imdbID":"tt0076759","Type":"movie","Poster":"http://ia.media-imdb.com/images/M/MV5BOTIyMDY2NGQtOGJjNi00OTk4LWFhMDgtYmE3M2NiYzM0YTVmXkEyXkFqcGdeQXVyNTU1NTcwOTk@._V1_SX300.jpg"}],"totalResults":"1","Response":"True"}'
-    http_version: 
-  recorded_at: Fri, 10 Jun 2016 20:19:16 GMT
-- request:
-    method: get
-    uri: http://omdbapi.com/?t=Star%20Wars:%20Episode%20IV%20-%20A%20New%20Hope
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Date:
-      - Fri, 10 Jun 2016 20:19:16 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - close
-      Set-Cookie:
-      - __cfduid=da7258e3fe903e2234610956a808e9f751465589956; expires=Sat, 10-Jun-17
-        20:19:16 GMT; path=/; domain=.omdbapi.com; HttpOnly
-      Cache-Control:
-      - public, max-age=3161
-      Expires:
-      - Fri, 10 Jun 2016 21:11:55 GMT
-      Last-Modified:
-      - Fri, 10 Jun 2016 20:11:55 GMT
-      Vary:
-      - "*"
-      X-Aspnet-Version:
-      - 4.0.30319
-      X-Powered-By:
-      - ASP.NET
-      Access-Control-Allow-Origin:
-      - "*"
-      Server:
-      - cloudflare-nginx
-      Cf-Ray:
-      - 2b0f8469682911c5-SJC
+      - 3aaaba2c67bd7a1d-SEA
     body:
       encoding: ASCII-8BIT
       string: '{"Title":"Star Wars: Episode IV - A New Hope","Year":"1977","Rated":"PG","Released":"25
         May 1977","Runtime":"121 min","Genre":"Action, Adventure, Fantasy","Director":"George
         Lucas","Writer":"George Lucas","Actors":"Mark Hamill, Harrison Ford, Carrie
         Fisher, Peter Cushing","Plot":"Luke Skywalker joins forces with a Jedi Knight,
-        a cocky pilot, a wookiee and two droids to save the galaxy from the Empire''s
+        a cocky pilot, a Wookiee, and two droids to save the galaxy from the Empire''s
         world-destroying battle-station, while also attempting to rescue Princess
         Leia from the evil Darth Vader.","Language":"English","Country":"USA","Awards":"Won
-        6 Oscars. Another 39 wins & 28 nominations.","Poster":"http://ia.media-imdb.com/images/M/MV5BOTIyMDY2NGQtOGJjNi00OTk4LWFhMDgtYmE3M2NiYzM0YTVmXkEyXkFqcGdeQXVyNTU1NTcwOTk@._V1_SX300.jpg","Metascore":"92","imdbRating":"8.7","imdbVotes":"894,008","imdbID":"tt0076759","Type":"movie","Response":"True"}'
+        6 Oscars. Another 50 wins & 28 nominations.","Poster":"https://images-na.ssl-images-amazon.com/images/M/MV5BYTUwNTdiMzMtNThmNS00ODUzLThlMDMtMTM5Y2JkNWJjOGQ2XkEyXkFqcGdeQXVyNzQ1ODk3MTQ@._V1_SX300.jpg","Ratings":[{"Source":"Internet
+        Movie Database","Value":"8.7/10"},{"Source":"Rotten Tomatoes","Value":"93%"},{"Source":"Metacritic","Value":"92/100"}],"Metascore":"92","imdbRating":"8.7","imdbVotes":"999,345","imdbID":"tt0076759","Type":"movie","DVD":"21
+        Sep 2004","BoxOffice":"N/A","Production":"20th Century Fox","Website":"http://www.starwars.com/episode-iv/","Response":"True"}'
     http_version: 
-  recorded_at: Fri, 10 Jun 2016 20:19:16 GMT
+  recorded_at: Sun, 08 Oct 2017 17:12:49 GMT
 recorded_with: VCR 3.0.3

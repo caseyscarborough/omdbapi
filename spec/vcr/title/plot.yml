@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://omdbapi.com/?t=Game%20of%20Thrones
+    uri: http://omdbapi.com/?apikey=<OMDB_API_KEY>&t=Game%20of%20Thrones
     body:
       encoding: US-ASCII
       string: ''
@@ -19,93 +19,22 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 10 Jun 2016 20:19:13 GMT
+      - Sun, 08 Oct 2017 17:11:47 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
       - chunked
       Connection:
-      - close
+      - keep-alive
       Set-Cookie:
-      - __cfduid=d16d72d802b23a0774017b7abdfd35a031465589953; expires=Sat, 10-Jun-17
-        20:19:13 GMT; path=/; domain=.omdbapi.com; HttpOnly
-      Cache-Control:
-      - public, max-age=1768
-      Expires:
-      - Fri, 10 Jun 2016 20:48:40 GMT
-      Last-Modified:
-      - Fri, 10 Jun 2016 19:48:40 GMT
-      Vary:
-      - "*"
-      X-Aspnet-Version:
-      - 4.0.30319
-      X-Powered-By:
-      - ASP.NET
-      Access-Control-Allow-Origin:
-      - "*"
-      Server:
-      - cloudflare-nginx
-      Cf-Ray:
-      - 2b0f845c0f4041cf-SJC
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        eyJUaXRsZSI6IkdhbWUgb2YgVGhyb25lcyIsIlllYXIiOiIyMDEx4oCTIiwi
-        UmF0ZWQiOiJUVi1NQSIsIlJlbGVhc2VkIjoiMTcgQXByIDIwMTEiLCJSdW50
-        aW1lIjoiNTYgbWluIiwiR2VucmUiOiJBZHZlbnR1cmUsIERyYW1hLCBGYW50
-        YXN5IiwiRGlyZWN0b3IiOiJOL0EiLCJXcml0ZXIiOiJEYXZpZCBCZW5pb2Zm
-        LCBELkIuIFdlaXNzIiwiQWN0b3JzIjoiUGV0ZXIgRGlua2xhZ2UsIExlbmEg
-        SGVhZGV5LCBLaXQgSGFyaW5ndG9uLCBFbWlsaWEgQ2xhcmtlIiwiUGxvdCI6
-        IldoaWxlIGEgY2l2aWwgd2FyIGJyZXdzIGJldHdlZW4gc2V2ZXJhbCBub2Js
-        ZSBmYW1pbGllcyBpbiBXZXN0ZXJvcywgdGhlIGNoaWxkcmVuIG9mIHRoZSBm
-        b3JtZXIgcnVsZXJzIG9mIHRoZSBsYW5kIGF0dGVtcHQgdG8gcmlzZSB1cCB0
-        byBwb3dlci4gTWVhbndoaWxlIGEgZm9yZ290dGVuIHJhY2UsIGJlbnQgb24g
-        ZGVzdHJ1Y3Rpb24sIHBsYW5zIHRvIHJldHVybiBhZnRlciB0aG91c2FuZHMg
-        b2YgeWVhcnMgaW4gdGhlIE5vcnRoLiIsIkxhbmd1YWdlIjoiRW5nbGlzaCIs
-        IkNvdW50cnkiOiJVU0EsIFVLIiwiQXdhcmRzIjoiV29uIDEgR29sZGVuIEds
-        b2JlLiBBbm90aGVyIDE4MyB3aW5zICYgMzA1IG5vbWluYXRpb25zLiIsIlBv
-        c3RlciI6Imh0dHA6Ly9pYS5tZWRpYS1pbWRiLmNvbS9pbWFnZXMvTS9NVjVC
-        TWpNNU9UUTFNVFk1Tmw1Qk1sNUJhbkJuWGtGdFpUZ3dNak0zTnpNeE9ERUAu
-        X1YxX1NYMzAwLmpwZyIsIk1ldGFzY29yZSI6Ik4vQSIsImltZGJSYXRpbmci
-        OiI5LjUiLCJpbWRiVm90ZXMiOiI5NzMsNDAzIiwiaW1kYklEIjoidHQwOTQ0
-        OTQ3IiwiVHlwZSI6InNlcmllcyIsIlJlc3BvbnNlIjoiVHJ1ZSJ9
-    http_version: 
-  recorded_at: Fri, 10 Jun 2016 20:19:14 GMT
-- request:
-    method: get
-    uri: http://omdbapi.com/?plot=full&t=Game%20of%20Thrones
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Date:
-      - Fri, 10 Jun 2016 20:19:14 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - close
-      Set-Cookie:
-      - __cfduid=d5484dfdd82a18d413cbe1d327989af7d1465589954; expires=Sat, 10-Jun-17
-        20:19:14 GMT; path=/; domain=.omdbapi.com; HttpOnly
+      - __cfduid=d07d392429286e5352ec63c7a99ee50111507482707; expires=Mon, 08-Oct-18
+        17:11:47 GMT; path=/; domain=.omdbapi.com; HttpOnly
       Cache-Control:
       - public, max-age=3600
       Expires:
-      - Fri, 10 Jun 2016 21:19:12 GMT
+      - Sun, 08 Oct 2017 18:11:47 GMT
       Last-Modified:
-      - Fri, 10 Jun 2016 20:19:12 GMT
+      - Sun, 08 Oct 2017 17:11:47 GMT
       Vary:
       - "*"
       X-Aspnet-Version:
@@ -117,33 +46,104 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Cf-Ray:
-      - 2b0f845cac212822-SJC
+      - 3aaab8a903607a1d-SEA
     body:
       encoding: ASCII-8BIT
       string: !binary |-
         eyJUaXRsZSI6IkdhbWUgb2YgVGhyb25lcyIsIlllYXIiOiIyMDEx4oCTIiwi
         UmF0ZWQiOiJUVi1NQSIsIlJlbGVhc2VkIjoiMTcgQXByIDIwMTEiLCJSdW50
-        aW1lIjoiNTYgbWluIiwiR2VucmUiOiJBZHZlbnR1cmUsIERyYW1hLCBGYW50
+        aW1lIjoiNTcgbWluIiwiR2VucmUiOiJBZHZlbnR1cmUsIERyYW1hLCBGYW50
         YXN5IiwiRGlyZWN0b3IiOiJOL0EiLCJXcml0ZXIiOiJEYXZpZCBCZW5pb2Zm
         LCBELkIuIFdlaXNzIiwiQWN0b3JzIjoiUGV0ZXIgRGlua2xhZ2UsIExlbmEg
-        SGVhZGV5LCBLaXQgSGFyaW5ndG9uLCBFbWlsaWEgQ2xhcmtlIiwiUGxvdCI6
-        Ik5lZCBTdGFyaywgTG9yZCBvZiBXaW50ZXJmZWxsLCBiZWNvbWVzIHRoZSBI
-        YW5kIG9mIHRoZSBLaW5nIGFmdGVyIHRoZSBmb3JtZXIgSGFuZCwgSm9uIEFy
-        cnluLCBoYXMgcGFzc2VkIGF3YXkuIEJ1dCBiZWZvcmUgTmVkIGdvZXMgdG8g
-        dGhlIGNhcGl0YWwsIEtpbmcncyBMYW5kaW5nLCBhIGxldHRlciBhcnJpdmVz
-        IGZyb20gaGlzIHdpZmUncyBzaXN0ZXIgTHlzYSwgd2hvIHdhcyB0aGUgd2lm
-        ZSBvZiBKb24gQXJyeW4uIFRoZXJlIGl0IHNheXMgdGhhdCBoZXIgaHVzYmFu
-        ZCB3YXMgbXVyZGVyZWQsIGFuZCBpdCBpcyB1cCB0byBOZWQgdG8gZmluZCBv
-        dXQgd2hhdCdzIGdvaW5nIG9uLiBCdXQgdGhhdCBpc24ndCBldmVyeXRoaW5n
-        LiBUaGUgV2hpdGUgV2Fsa2VycyBoYXZlIGJlZW4gc2VlbiwgYW5kIHRoZXkg
-        c2VlbSB0byBnbyBkb3duIHNvdXRoIiwiTGFuZ3VhZ2UiOiJFbmdsaXNoIiwi
-        Q291bnRyeSI6IlVTQSwgVUsiLCJBd2FyZHMiOiJXb24gMSBHb2xkZW4gR2xv
-        YmUuIEFub3RoZXIgMTgzIHdpbnMgJiAzMDUgbm9taW5hdGlvbnMuIiwiUG9z
-        dGVyIjoiaHR0cDovL2lhLm1lZGlhLWltZGIuY29tL2ltYWdlcy9NL01WNUJN
-        ak01T1RRMU1UWTVObDVCTWw1QmFuQm5Ya0Z0WlRnd01qTTNOek14T0RFQC5f
-        VjFfU1gzMDAuanBnIiwiTWV0YXNjb3JlIjoiTi9BIiwiaW1kYlJhdGluZyI6
-        IjkuNSIsImltZGJWb3RlcyI6Ijk3Myw0MDMiLCJpbWRiSUQiOiJ0dDA5NDQ5
-        NDciLCJUeXBlIjoic2VyaWVzIiwiUmVzcG9uc2UiOiJUcnVlIn0=
+        SGVhZGV5LCBFbWlsaWEgQ2xhcmtlLCBLaXQgSGFyaW5ndG9uIiwiUGxvdCI6
+        Ik5pbmUgbm9ibGUgZmFtaWxpZXMgZmlnaHQgZm9yIGNvbnRyb2wgb3ZlciB0
+        aGUgbXl0aGljYWwgbGFuZHMgb2YgV2VzdGVyb3MsIHdoaWxlIGEgZm9yZ290
+        dGVuIHJhY2UgcmV0dXJucyBhZnRlciBiZWluZyBkb3JtYW50IGZvciB0aG91
+        c2FuZHMgb2YgeWVhcnMuIiwiTGFuZ3VhZ2UiOiJFbmdsaXNoIiwiQ291bnRy
+        eSI6IlVTQSwgVUsiLCJBd2FyZHMiOiJXb24gMSBHb2xkZW4gR2xvYmUuIEFu
+        b3RoZXIgMjQ5IHdpbnMgJiA0MjIgbm9taW5hdGlvbnMuIiwiUG9zdGVyIjoi
+        aHR0cHM6Ly9pbWFnZXMtbmEuc3NsLWltYWdlcy1hbWF6b24uY29tL2ltYWdl
+        cy9NL01WNUJNakUzTlRRMU5EZzFNbDVCTWw1QmFuQm5Ya0Z0WlRnd056WTJO
+        REEwTWpJQC5fVjFfU1gzMDAuanBnIiwiUmF0aW5ncyI6W3siU291cmNlIjoi
+        SW50ZXJuZXQgTW92aWUgRGF0YWJhc2UiLCJWYWx1ZSI6IjkuNS8xMCJ9XSwi
+        TWV0YXNjb3JlIjoiTi9BIiwiaW1kYlJhdGluZyI6IjkuNSIsImltZGJWb3Rl
+        cyI6IjEsMjM0LDExNyIsImltZGJJRCI6InR0MDk0NDk0NyIsIlR5cGUiOiJz
+        ZXJpZXMiLCJ0b3RhbFNlYXNvbnMiOiI4IiwiUmVzcG9uc2UiOiJUcnVlIn0=
     http_version: 
-  recorded_at: Fri, 10 Jun 2016 20:19:14 GMT
+  recorded_at: Sun, 08 Oct 2017 17:11:47 GMT
+- request:
+    method: get
+    uri: http://omdbapi.com/?apikey=<OMDB_API_KEY>&plot=full&t=Game%20of%20Thrones
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 08 Oct 2017 17:11:47 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dc3cec81c973b38a74ab658520686bfd41507482707; expires=Mon, 08-Oct-18
+        17:11:47 GMT; path=/; domain=.omdbapi.com; HttpOnly
+      Cache-Control:
+      - public, max-age=3600
+      Expires:
+      - Sun, 08 Oct 2017 18:11:47 GMT
+      Last-Modified:
+      - Sun, 08 Oct 2017 17:11:47 GMT
+      Vary:
+      - "*"
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 3aaab8a9d36e7985-SEA
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJUaXRsZSI6IkdhbWUgb2YgVGhyb25lcyIsIlllYXIiOiIyMDEx4oCTIiwi
+        UmF0ZWQiOiJUVi1NQSIsIlJlbGVhc2VkIjoiMTcgQXByIDIwMTEiLCJSdW50
+        aW1lIjoiNTcgbWluIiwiR2VucmUiOiJBZHZlbnR1cmUsIERyYW1hLCBGYW50
+        YXN5IiwiRGlyZWN0b3IiOiJOL0EiLCJXcml0ZXIiOiJEYXZpZCBCZW5pb2Zm
+        LCBELkIuIFdlaXNzIiwiQWN0b3JzIjoiUGV0ZXIgRGlua2xhZ2UsIExlbmEg
+        SGVhZGV5LCBFbWlsaWEgQ2xhcmtlLCBLaXQgSGFyaW5ndG9uIiwiUGxvdCI6
+        IkluIHRoZSBteXRoaWNhbCBjb250aW5lbnQgb2YgV2VzdGVyb3MsIHNldmVy
+        YWwgcG93ZXJmdWwgZmFtaWxpZXMgZmlnaHQgZm9yIGNvbnRyb2wgb2YgdGhl
+        IFNldmVuIEtpbmdkb21zLiBBcyBjb25mbGljdCBlcnVwdHMgaW4gdGhlIGtp
+        bmdkb21zIG9mIG1lbiwgYW4gYW5jaWVudCBlbmVteSByaXNlcyBvbmNlIGFn
+        YWluIHRvIHRocmVhdGVuIHRoZW0gYWxsLiBNZWFud2hpbGUsIHRoZSBsYXN0
+        IGhlaXJzIG9mIGEgcmVjZW50bHkgdXN1cnBlZCBkeW5hc3R5IHBsb3QgdG8g
+        dGFrZSBiYWNrIHRoZWlyIGhvbWVsYW5kIGZyb20gYWNyb3NzIHRoZSBOYXJy
+        b3cgU2VhLiIsIkxhbmd1YWdlIjoiRW5nbGlzaCIsIkNvdW50cnkiOiJVU0Es
+        IFVLIiwiQXdhcmRzIjoiV29uIDEgR29sZGVuIEdsb2JlLiBBbm90aGVyIDI0
+        OSB3aW5zICYgNDIyIG5vbWluYXRpb25zLiIsIlBvc3RlciI6Imh0dHBzOi8v
+        aW1hZ2VzLW5hLnNzbC1pbWFnZXMtYW1hem9uLmNvbS9pbWFnZXMvTS9NVjVC
+        TWpFM05UUTFORGcxTWw1Qk1sNUJhbkJuWGtGdFpUZ3dOelkyTkRBME1qSUAu
+        X1YxX1NYMzAwLmpwZyIsIlJhdGluZ3MiOlt7IlNvdXJjZSI6IkludGVybmV0
+        IE1vdmllIERhdGFiYXNlIiwiVmFsdWUiOiI5LjUvMTAifV0sIk1ldGFzY29y
+        ZSI6Ik4vQSIsImltZGJSYXRpbmciOiI5LjUiLCJpbWRiVm90ZXMiOiIxLDIz
+        NCwxMTciLCJpbWRiSUQiOiJ0dDA5NDQ5NDciLCJUeXBlIjoic2VyaWVzIiwi
+        dG90YWxTZWFzb25zIjoiOCIsIlJlc3BvbnNlIjoiVHJ1ZSJ9
+    http_version: 
+  recorded_at: Sun, 08 Oct 2017 17:11:47 GMT
 recorded_with: VCR 3.0.3

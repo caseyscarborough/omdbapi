@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://omdbapi.com/?t=Star%20Wars
+    uri: http://omdbapi.com/?apikey=<OMDB_API_KEY>&t=Star%20Wars
     body:
       encoding: US-ASCII
       string: ''
@@ -19,22 +19,22 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 10 Jun 2016 20:19:13 GMT
+      - Sun, 08 Oct 2017 17:11:47 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
       - chunked
       Connection:
-      - close
+      - keep-alive
       Set-Cookie:
-      - __cfduid=dff811992f618e7e9c901f0100511a0181465589953; expires=Sat, 10-Jun-17
-        20:19:13 GMT; path=/; domain=.omdbapi.com; HttpOnly
+      - __cfduid=d8c8694689a08d8b74e7a2f72648a136d1507482707; expires=Mon, 08-Oct-18
+        17:11:47 GMT; path=/; domain=.omdbapi.com; HttpOnly
       Cache-Control:
-      - public, max-age=959
+      - public, max-age=3507
       Expires:
-      - Fri, 10 Jun 2016 20:35:10 GMT
+      - Sun, 08 Oct 2017 18:10:14 GMT
       Last-Modified:
-      - Fri, 10 Jun 2016 19:35:10 GMT
+      - Sun, 08 Oct 2017 17:10:14 GMT
       Vary:
       - "*"
       X-Aspnet-Version:
@@ -46,12 +46,19 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Cf-Ray:
-      - 2b0f8459291e1e83-SJC
+      - 3aaab8a6e5c91baf-SEA
     body:
       encoding: ASCII-8BIT
-      string: '{"Title":"Star Wars","Year":"1983","Rated":"N/A","Released":"01 May
-        1983","Runtime":"N/A","Genre":"Action, Adventure, Sci-Fi","Director":"N/A","Writer":"N/A","Actors":"Harrison
-        Ford, Alec Guinness, Mark Hamill, James Earl Jones","Plot":"N/A","Language":"English","Country":"USA","Awards":"N/A","Poster":"N/A","Metascore":"N/A","imdbRating":"7.9","imdbVotes":"344","imdbID":"tt0251413","Type":"game","Response":"True"}'
+      string: '{"Title":"Star Wars: Episode IV - A New Hope","Year":"1977","Rated":"PG","Released":"25
+        May 1977","Runtime":"121 min","Genre":"Action, Adventure, Fantasy","Director":"George
+        Lucas","Writer":"George Lucas","Actors":"Mark Hamill, Harrison Ford, Carrie
+        Fisher, Peter Cushing","Plot":"Luke Skywalker joins forces with a Jedi Knight,
+        a cocky pilot, a Wookiee, and two droids to save the galaxy from the Empire''s
+        world-destroying battle-station, while also attempting to rescue Princess
+        Leia from the evil Darth Vader.","Language":"English","Country":"USA","Awards":"Won
+        6 Oscars. Another 50 wins & 28 nominations.","Poster":"https://images-na.ssl-images-amazon.com/images/M/MV5BYTUwNTdiMzMtNThmNS00ODUzLThlMDMtMTM5Y2JkNWJjOGQ2XkEyXkFqcGdeQXVyNzQ1ODk3MTQ@._V1_SX300.jpg","Ratings":[{"Source":"Internet
+        Movie Database","Value":"8.7/10"},{"Source":"Rotten Tomatoes","Value":"93%"},{"Source":"Metacritic","Value":"92/100"}],"Metascore":"92","imdbRating":"8.7","imdbVotes":"999,345","imdbID":"tt0076759","Type":"movie","DVD":"21
+        Sep 2004","BoxOffice":"N/A","Production":"20th Century Fox","Website":"http://www.starwars.com/episode-iv/","Response":"True"}'
     http_version: 
-  recorded_at: Fri, 10 Jun 2016 20:19:13 GMT
+  recorded_at: Sun, 08 Oct 2017 17:11:47 GMT
 recorded_with: VCR 3.0.3

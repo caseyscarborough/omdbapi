@@ -13,6 +13,7 @@ The complete documentation for the gem can be viewed at [rdoc.info/gems/omdbapi/
 ### Requirements
 
 * Ruby v1.9.3 or later
+* A valid OMDB API key from http://www.omdbapi.com/ (Become a Patron)
 
 ### Installing
 
@@ -39,6 +40,17 @@ $ gem install omdbapi
 ```ruby
 require 'omdbapi'
 ```
+
+## Setting the API Key:
+
+You can set the api key inline using the following code:
+
+```ruby
+OMDB.api_key = 'secret'
+```
+
+Or you can set the ENV var `OMDB_API_KEY` and it will use that automatically.
+
 ### Title
 
 You can get a movie or TV show's information in a Hash by using the title method, shown below:
@@ -117,7 +129,7 @@ This method will return a Hash of the title's properties, exactly as the title m
 The test suite is written using RSpec, and can be run by issuing the following command from the root of the repository:
 
 ```bash
-$ rspec spec
+$ OMDB_API_KEY=secret rspec spec
 ```
 
 ## Contributing

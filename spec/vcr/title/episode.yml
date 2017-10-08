@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://omdbapi.com/?episode=1&t=True%20Detective
+    uri: http://omdbapi.com/?apikey=<OMDB_API_KEY>&episode=1&t=True%20Detective
     body:
       encoding: US-ASCII
       string: ''
@@ -19,22 +19,22 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 10 Jun 2016 20:21:14 GMT
+      - Sun, 08 Oct 2017 17:11:48 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
       - chunked
       Connection:
-      - close
+      - keep-alive
       Set-Cookie:
-      - __cfduid=d69a319cbaea635c34ad33dda9749d8a51465590074; expires=Sat, 10-Jun-17
-        20:21:14 GMT; path=/; domain=.omdbapi.com; HttpOnly
+      - __cfduid=d69802fbe1d0917d879f4365c6379583c1507482708; expires=Mon, 08-Oct-18
+        17:11:48 GMT; path=/; domain=.omdbapi.com; HttpOnly
       Cache-Control:
       - public, max-age=3600
       Expires:
-      - Fri, 10 Jun 2016 21:21:12 GMT
+      - Sun, 08 Oct 2017 18:11:48 GMT
       Last-Modified:
-      - Fri, 10 Jun 2016 20:21:12 GMT
+      - Sun, 08 Oct 2017 17:11:48 GMT
       Vary:
       - "*"
       X-Aspnet-Version:
@@ -46,7 +46,7 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Cf-Ray:
-      - 2b0f874c88f428ac-SJC
+      - 3aaab8b0475d1bd3-SEA
     body:
       encoding: ASCII-8BIT
       string: !binary |-
@@ -55,18 +55,21 @@ http_interactions:
         bWUiOiI1NSBtaW4iLCJHZW5yZSI6IkNyaW1lLCBEcmFtYSwgTXlzdGVyeSIs
         IkRpcmVjdG9yIjoiTi9BIiwiV3JpdGVyIjoiTmljIFBpenpvbGF0dG8iLCJB
         Y3RvcnMiOiJNYXR0aGV3IE1jQ29uYXVnaGV5LCBDb2xpbiBGYXJyZWxsLCBX
-        b29keSBIYXJyZWxzb24sIFJhY2hlbCBNY0FkYW1zIiwiUGxvdCI6IkFuIGFu
-        dGhvbG9neSBzZXJpZXMgaW4gd2hpY2ggcG9saWNlIGludmVzdGlnYXRpb25z
-        IHVuZWFydGggdGhlIHBlcnNvbmFsIGFuZCBwcm9mZXNzaW9uYWwgc2VjcmV0
-        cyBvZiB0aG9zZSBpbnZvbHZlZCwgYm90aCB3aXRoaW4gYW5kIG91dHNpZGUg
-        dGhlIGxhdy4iLCJMYW5ndWFnZSI6IkVuZ2xpc2giLCJDb3VudHJ5IjoiVVNB
-        IiwiQXdhcmRzIjoiTm9taW5hdGVkIGZvciA0IEdvbGRlbiBHbG9iZXMuIEFu
-        b3RoZXIgMjcgd2lucyAmIDUyIG5vbWluYXRpb25zLiIsIlBvc3RlciI6Imh0
-        dHA6Ly9pYS5tZWRpYS1pbWRiLmNvbS9pbWFnZXMvTS9NVjVCTVRVek5UTXdP
-        REkxT1Y1Qk1sNUJhbkJuWGtGdFpUZ3dNREl6TVRRME5URUAuX1YxX1NYMzAw
-        LmpwZyIsIk1ldGFzY29yZSI6Ik4vQSIsImltZGJSYXRpbmciOiI5LjEiLCJp
-        bWRiVm90ZXMiOiIzMTQsMjI4IiwiaW1kYklEIjoidHQyMzU2Nzc3IiwiVHlw
-        ZSI6InNlcmllcyIsIlJlc3BvbnNlIjoiVHJ1ZSJ9
+        b29keSBIYXJyZWxzb24sIFJhY2hlbCBNY0FkYW1zIiwiUGxvdCI6IlNlYXNv
+        bmFsIGFudGhvbG9neSBzZXJpZXMgaW4gd2hpY2ggcG9saWNlIGludmVzdGln
+        YXRpb25zIHVuZWFydGggdGhlIHBlcnNvbmFsIGFuZCBwcm9mZXNzaW9uYWwg
+        c2VjcmV0cyBvZiB0aG9zZSBpbnZvbHZlZCwgYm90aCB3aXRoaW4gYW5kIG91
+        dHNpZGUgdGhlIGxhdy4iLCJMYW5ndWFnZSI6IkVuZ2xpc2giLCJDb3VudHJ5
+        IjoiVVNBIiwiQXdhcmRzIjoiTm9taW5hdGVkIGZvciA0IEdvbGRlbiBHbG9i
+        ZXMuIEFub3RoZXIgMzAgd2lucyAmIDU2IG5vbWluYXRpb25zLiIsIlBvc3Rl
+        ciI6Imh0dHBzOi8vaW1hZ2VzLW5hLnNzbC1pbWFnZXMtYW1hem9uLmNvbS9p
+        bWFnZXMvTS9NVjVCTW1SbFltRTBZMlV0TkRrMllpMDBOemN6TFdFd1pURXRa
+        bUUyT1RjeVl6Y3hZbVU1WGtFeVhrRnFjR2RlUVhWeU5UTXhNamd4TXpBQC5f
+        VjFfU1gzMDAuanBnIiwiUmF0aW5ncyI6W3siU291cmNlIjoiSW50ZXJuZXQg
+        TW92aWUgRGF0YWJhc2UiLCJWYWx1ZSI6IjkuMC8xMCJ9XSwiTWV0YXNjb3Jl
+        IjoiTi9BIiwiaW1kYlJhdGluZyI6IjkuMCIsImltZGJWb3RlcyI6IjM3MCw2
+        NDciLCJpbWRiSUQiOiJ0dDIzNTY3NzciLCJUeXBlIjoic2VyaWVzIiwidG90
+        YWxTZWFzb25zIjoiMiIsIlJlc3BvbnNlIjoiVHJ1ZSJ9
     http_version: 
-  recorded_at: Fri, 10 Jun 2016 20:21:14 GMT
+  recorded_at: Sun, 08 Oct 2017 17:11:48 GMT
 recorded_with: VCR 3.0.3

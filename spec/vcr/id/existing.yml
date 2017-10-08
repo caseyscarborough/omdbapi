@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://omdbapi.com/?i=tt0411008
+    uri: http://omdbapi.com/?apikey=<OMDB_API_KEY>&i=tt0411008
     body:
       encoding: US-ASCII
       string: ''
@@ -19,22 +19,22 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 10 Jun 2016 20:19:15 GMT
+      - Sun, 08 Oct 2017 17:12:48 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
       - chunked
       Connection:
-      - close
+      - keep-alive
       Set-Cookie:
-      - __cfduid=d8a2312fd7c55b83c70b9826c5256aa1c1465589954; expires=Sat, 10-Jun-17
-        20:19:14 GMT; path=/; domain=.omdbapi.com; HttpOnly
+      - __cfduid=de25bef05ac7dd984645b6e7a24c899921507482768; expires=Mon, 08-Oct-18
+        17:12:48 GMT; path=/; domain=.omdbapi.com; HttpOnly
       Cache-Control:
-      - public, max-age=3600
+      - public, max-age=3508
       Expires:
-      - Fri, 10 Jun 2016 21:19:13 GMT
+      - Sun, 08 Oct 2017 18:11:17 GMT
       Last-Modified:
-      - Fri, 10 Jun 2016 20:19:13 GMT
+      - Sun, 08 Oct 2017 17:11:17 GMT
       Vary:
       - "*"
       X-Aspnet-Version:
@@ -46,7 +46,7 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Cf-Ray:
-      - 2b0f84622bb21e5f-SJC
+      - 3aaaba2957a31bd3-SEA
     body:
       encoding: ASCII-8BIT
       string: !binary |-
@@ -54,20 +54,24 @@ http_interactions:
         IlRWLTE0IiwiUmVsZWFzZWQiOiIyMiBTZXAgMjAwNCIsIlJ1bnRpbWUiOiI0
         NCBtaW4iLCJHZW5yZSI6IkFkdmVudHVyZSwgRHJhbWEsIEZhbnRhc3kiLCJE
         aXJlY3RvciI6Ik4vQSIsIldyaXRlciI6IkouSi4gQWJyYW1zLCBKZWZmcmV5
-        IExpZWJlciwgRGFtb24gTGluZGVsb2YiLCJBY3RvcnMiOiJOYXZlZW4gQW5k
-        cmV3cywgTWF0dGhldyBGb3gsIEpvcmdlIEdhcmNpYSwgSm9zaCBIb2xsb3dh
-        eSIsIlBsb3QiOiJUaGUgc3Vydml2b3JzIG9mIGEgcGxhbmUgY3Jhc2ggYXJl
-        IGZvcmNlZCB0byB3b3JrIHRvZ2V0aGVyIGluIG9yZGVyIHRvIHN1cnZpdmUg
-        b24gYSBzZWVtaW5nbHkgZGVzZXJ0ZWQgdHJvcGljYWwgaXNsYW5kLiIsIkxh
-        bmd1YWdlIjoiQXJhYmljLCBHZXJtYW4sIFJ1c3NpYW4sIFBvcnR1Z3Vlc2Us
-        IEtvcmVhbiwgTGF0aW4sIEphcGFuZXNlLCBFbmdsaXNoLCBGcmVuY2gsIFNw
-        YW5pc2giLCJDb3VudHJ5IjoiVVNBIiwiQXdhcmRzIjoiV29uIDEgR29sZGVu
-        IEdsb2JlLiBBbm90aGVyIDk4IHdpbnMgJiAzNTggbm9taW5hdGlvbnMuIiwi
-        UG9zdGVyIjoiaHR0cDovL2lhLm1lZGlhLWltZGIuY29tL2ltYWdlcy9NL01W
-        NUJNakEzTnpNeU16VTFNVjVCTWw1QmFuQm5Ya0Z0WlRjd05qYzFPRFV3TWdA
-        QC5fVjFfU1gzMDAuanBnIiwiTWV0YXNjb3JlIjoiTi9BIiwiaW1kYlJhdGlu
-        ZyI6IjguNCIsImltZGJWb3RlcyI6IjM3MCw5MjciLCJpbWRiSUQiOiJ0dDA0
-        MTEwMDgiLCJUeXBlIjoic2VyaWVzIiwiUmVzcG9uc2UiOiJUcnVlIn0=
+        IExpZWJlciwgRGFtb24gTGluZGVsb2YiLCJBY3RvcnMiOiJKb3JnZSBHYXJj
+        aWEsIEpvc2ggSG9sbG93YXksIFl1bmppbiBLaW0sIEV2YW5nZWxpbmUgTGls
+        bHkiLCJQbG90IjoiVGhlIHN1cnZpdm9ycyBvZiBhIHBsYW5lIGNyYXNoIGFy
+        ZSBmb3JjZWQgdG8gd29yayB0b2dldGhlciBpbiBvcmRlciB0byBzdXJ2aXZl
+        IG9uIGEgc2VlbWluZ2x5IGRlc2VydGVkIHRyb3BpY2FsIGlzbGFuZC4iLCJM
+        YW5ndWFnZSI6IkVuZ2xpc2gsIFBvcnR1Z3Vlc2UsIFNwYW5pc2gsIEFyYWJp
+        YywgRnJlbmNoLCBLb3JlYW4sIEdlcm1hbiwgTGF0aW4sIFJ1c3NpYW4sIEph
+        cGFuZXNlIiwiQ291bnRyeSI6IlVTQSIsIkF3YXJkcyI6IldvbiAxIEdvbGRl
+        biBHbG9iZS4gQW5vdGhlciAxMDUgd2lucyAmIDM3NiBub21pbmF0aW9ucy4i
+        LCJQb3N0ZXIiOiJodHRwczovL2ltYWdlcy1uYS5zc2wtaW1hZ2VzLWFtYXpv
+        bi5jb20vaW1hZ2VzL00vTVY1Qk1qQTNOek15TXpVMU1WNUJNbDVCYW5Cblhr
+        RnRaVGN3TmpjMU9EVXdNZ0BALl9WMV9TWDMwMC5qcGciLCJSYXRpbmdzIjpb
+        eyJTb3VyY2UiOiJJbnRlcm5ldCBNb3ZpZSBEYXRhYmFzZSIsIlZhbHVlIjoi
+        OC40LzEwIn0seyJTb3VyY2UiOiJSb3R0ZW4gVG9tYXRvZXMiLCJWYWx1ZSI6
+        IjgwJSJ9XSwiTWV0YXNjb3JlIjoiTi9BIiwiaW1kYlJhdGluZyI6IjguNCIs
+        ImltZGJWb3RlcyI6IjQxNSw2ODEiLCJpbWRiSUQiOiJ0dDA0MTEwMDgiLCJU
+        eXBlIjoic2VyaWVzIiwidG90YWxTZWFzb25zIjoiNiIsIlJlc3BvbnNlIjoi
+        VHJ1ZSJ9
     http_version: 
-  recorded_at: Fri, 10 Jun 2016 20:19:15 GMT
+  recorded_at: Sun, 08 Oct 2017 17:12:48 GMT
 recorded_with: VCR 3.0.3

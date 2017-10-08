@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://omdbapi.com/?episode=1&season=1&t=True%20Detective
+    uri: http://omdbapi.com/?apikey=<OMDB_API_KEY>&episode=1&season=1&t=True%20Detective
     body:
       encoding: US-ASCII
       string: ''
@@ -19,22 +19,22 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 10 Jun 2016 20:21:28 GMT
+      - Sun, 08 Oct 2017 17:11:48 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
       - chunked
       Connection:
-      - close
+      - keep-alive
       Set-Cookie:
-      - __cfduid=d9f8126cd4b7aa3390b802358a39df7801465590088; expires=Sat, 10-Jun-17
-        20:21:28 GMT; path=/; domain=.omdbapi.com; HttpOnly
+      - __cfduid=de95e25918407fab69817003a4db786ea1507482707; expires=Mon, 08-Oct-18
+        17:11:47 GMT; path=/; domain=.omdbapi.com; HttpOnly
       Cache-Control:
       - public, max-age=3600
       Expires:
-      - Fri, 10 Jun 2016 21:21:26 GMT
+      - Sun, 08 Oct 2017 18:11:47 GMT
       Last-Modified:
-      - Fri, 10 Jun 2016 20:21:26 GMT
+      - Sun, 08 Oct 2017 17:11:47 GMT
       Vary:
       - "*"
       X-Aspnet-Version:
@@ -46,16 +46,17 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Cf-Ray:
-      - 2b0f87a52e8b287c-SJC
+      - 3aaab8abe1cc2a0d-SEA
     body:
       encoding: ASCII-8BIT
       string: '{"Title":"The Long Bright Dark","Year":"2014","Rated":"TV-MA","Released":"12
         Jan 2014","Season":"1","Episode":"1","Runtime":"58 min","Genre":"Crime, Drama,
-        Mystery","Director":"Cary Joji Fukunaga","Writer":"Nic Pizzolatto (created
-        by), Nic Pizzolatto","Actors":"Matthew McConaughey, Woody Harrelson, Michelle
-        Monaghan, Michael Potts","Plot":"In 2012, former detective partners, Rust
-        Cohle and Martin Hart recap one of their very first cases together involving
-        a serial killer, back in 1995.","Language":"English","Country":"USA","Awards":"N/A","Poster":"http://ia.media-imdb.com/images/M/MV5BMTY5NjA2MjEyN15BMl5BanBnXkFtZTgwNzU2MjQ4MDE@._V1_SX300.jpg","Metascore":"N/A","imdbRating":"9.0","imdbVotes":"10914","imdbID":"tt2657398","seriesID":"tt2356777","Type":"episode","Response":"True"}'
+        Mystery","Director":"Cary Fukunaga","Writer":"Nic Pizzolatto (created by),
+        Nic Pizzolatto","Actors":"Matthew McConaughey, Woody Harrelson, Michelle Monaghan,
+        Michael Potts","Plot":"In 2012, former detective partners Rust Cohle and Martin
+        Hart recap one of their very first cases together involving a serial killer,
+        back in 1995.","Language":"English","Country":"USA","Awards":"N/A","Poster":"https://images-na.ssl-images-amazon.com/images/M/MV5BMjkxMzMxNDQxNF5BMl5BanBnXkFtZTgwNDE2NzM2MjE@._V1_SX300.jpg","Ratings":[{"Source":"Internet
+        Movie Database","Value":"9.0/10"}],"Metascore":"N/A","imdbRating":"9.0","imdbVotes":"12591","imdbID":"tt2657398","seriesID":"tt2356777","Type":"episode","Response":"True"}'
     http_version: 
-  recorded_at: Fri, 10 Jun 2016 20:21:28 GMT
+  recorded_at: Sun, 08 Oct 2017 17:11:48 GMT
 recorded_with: VCR 3.0.3

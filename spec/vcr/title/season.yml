@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://omdbapi.com/?season=1&t=True%20Detective
+    uri: http://omdbapi.com/?apikey=<OMDB_API_KEY>&season=1&t=True%20Detective
     body:
       encoding: US-ASCII
       string: ''
@@ -19,22 +19,22 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 10 Jun 2016 20:19:14 GMT
+      - Sun, 08 Oct 2017 17:11:48 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
       - chunked
       Connection:
-      - close
+      - keep-alive
       Set-Cookie:
-      - __cfduid=d8ec542a806a0e8fa67937b6725853bee1465589954; expires=Sat, 10-Jun-17
-        20:19:14 GMT; path=/; domain=.omdbapi.com; HttpOnly
+      - __cfduid=dde61cab0be382a4abc0be038f51aed1f1507482708; expires=Mon, 08-Oct-18
+        17:11:48 GMT; path=/; domain=.omdbapi.com; HttpOnly
       Cache-Control:
-      - public, max-age=3599
+      - public, max-age=3600
       Expires:
-      - Fri, 10 Jun 2016 21:19:12 GMT
+      - Sun, 08 Oct 2017 18:11:48 GMT
       Last-Modified:
-      - Fri, 10 Jun 2016 20:19:12 GMT
+      - Sun, 08 Oct 2017 17:11:48 GMT
       Vary:
       - "*"
       X-Aspnet-Version:
@@ -46,18 +46,18 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Cf-Ray:
-      - 2b0f845e75cb284c-SJC
+      - 3aaab8af758f79d3-SEA
     body:
       encoding: ASCII-8BIT
-      string: '{"Title":"True Detective","Season":"1","Episodes":[{"Title":"The Long
-        Bright Dark","Released":"2014-01-12","Episode":"1","imdbRating":"9.0","imdbID":"tt2657398"},{"Title":"Seeing
+      string: '{"Title":"True Detective","Season":"1","totalSeasons":"2","Episodes":[{"Title":"The
+        Long Bright Dark","Released":"2014-01-12","Episode":"1","imdbRating":"9.0","imdbID":"tt2657398"},{"Title":"Seeing
         Things","Released":"2014-01-19","Episode":"2","imdbRating":"8.9","imdbID":"tt2704380"},{"Title":"The
         Locked Room","Released":"2014-01-26","Episode":"3","imdbRating":"9.2","imdbID":"tt2790184"},{"Title":"Who
         Goes There","Released":"2014-02-09","Episode":"4","imdbRating":"9.7","imdbID":"tt2790174"},{"Title":"The
         Secret Fate of All Life","Released":"2014-02-16","Episode":"5","imdbRating":"9.6","imdbID":"tt2790196"},{"Title":"Haunted
         Houses","Released":"2014-02-23","Episode":"6","imdbRating":"9.2","imdbID":"tt2790238"},{"Title":"After
         You''ve Gone","Released":"2014-03-02","Episode":"7","imdbRating":"9.2","imdbID":"tt2790240"},{"Title":"Form
-        and Void","Released":"2014-03-09","Episode":"8","imdbRating":"9.5","imdbID":"tt2790254"}],"Response":"True"}'
+        and Void","Released":"2014-03-09","Episode":"8","imdbRating":"9.6","imdbID":"tt2790254"}],"Response":"True"}'
     http_version: 
-  recorded_at: Fri, 10 Jun 2016 20:19:14 GMT
+  recorded_at: Sun, 08 Oct 2017 17:11:48 GMT
 recorded_with: VCR 3.0.3

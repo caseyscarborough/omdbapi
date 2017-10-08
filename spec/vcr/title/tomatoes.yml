@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://omdbapi.com/?t=inception&tomatoes=true
+    uri: http://omdbapi.com/?apikey=<OMDB_API_KEY>&t=inception&tomatoes=true
     body:
       encoding: US-ASCII
       string: ''
@@ -19,22 +19,22 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 10 Jun 2016 20:19:14 GMT
+      - Sun, 08 Oct 2017 17:12:48 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
       - chunked
       Connection:
-      - close
+      - keep-alive
       Set-Cookie:
-      - __cfduid=d8a2312fd7c55b83c70b9826c5256aa1c1465589954; expires=Sat, 10-Jun-17
-        20:19:14 GMT; path=/; domain=.omdbapi.com; HttpOnly
+      - __cfduid=dfad9e4d068e1ae59f3c890fad6e0b0da1507482768; expires=Mon, 08-Oct-18
+        17:12:48 GMT; path=/; domain=.omdbapi.com; HttpOnly
       Cache-Control:
-      - public, max-age=3454
+      - public, max-age=3508
       Expires:
-      - Fri, 10 Jun 2016 21:16:47 GMT
+      - Sun, 08 Oct 2017 18:11:16 GMT
       Last-Modified:
-      - Fri, 10 Jun 2016 20:16:47 GMT
+      - Sun, 08 Oct 2017 17:11:16 GMT
       Vary:
       - "*"
       X-Aspnet-Version:
@@ -46,19 +46,18 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Cf-Ray:
-      - 2b0f846147da1e5f-SJC
+      - 3aaaba28a4302a31-SEA
     body:
       encoding: ASCII-8BIT
       string: '{"Title":"Inception","Year":"2010","Rated":"PG-13","Released":"16 Jul
-        2010","Runtime":"148 min","Genre":"Action, Mystery, Sci-Fi","Director":"Christopher
+        2010","Runtime":"148 min","Genre":"Action, Adventure, Sci-Fi","Director":"Christopher
         Nolan","Writer":"Christopher Nolan","Actors":"Leonardo DiCaprio, Joseph Gordon-Levitt,
         Ellen Page, Tom Hardy","Plot":"A thief, who steals corporate secrets through
         use of dream-sharing technology, is given the inverse task of planting an
-        idea into the mind of a CEO.","Language":"English, French, Japanese","Country":"USA,
-        UK","Awards":"Won 4 Oscars. Another 139 wins & 192 nominations.","Poster":"http://ia.media-imdb.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300.jpg","Metascore":"74","imdbRating":"8.8","imdbVotes":"1,434,451","imdbID":"tt1375666","Type":"movie","tomatoMeter":"86","tomatoImage":"certified","tomatoRating":"8.1","tomatoReviews":"326","tomatoFresh":"282","tomatoRotten":"44","tomatoConsensus":"Smart,
-        innovative, and thrilling, Inception is that rare summer blockbuster that
-        succeeds viscerally as well as intellectually.","tomatoUserMeter":"91","tomatoUserRating":"4.2","tomatoUserReviews":"564261","tomatoURL":"http://www.rottentomatoes.com/m/inception/","DVD":"07
-        Dec 2010","BoxOffice":"$292.6M","Production":"Warner Bros. Pictures","Website":"http://inceptionmovie.warnerbros.com/","Response":"True"}'
+        idea into the mind of a CEO.","Language":"English, Japanese, French","Country":"USA,
+        UK","Awards":"Won 4 Oscars. Another 152 wins & 204 nominations.","Poster":"https://images-na.ssl-images-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300.jpg","Ratings":[{"Source":"Internet
+        Movie Database","Value":"8.8/10"},{"Source":"Rotten Tomatoes","Value":"86%"},{"Source":"Metacritic","Value":"74/100"}],"Metascore":"74","imdbRating":"8.8","imdbVotes":"1,626,815","imdbID":"tt1375666","Type":"movie","tomatoMeter":"N/A","tomatoImage":"N/A","tomatoRating":"N/A","tomatoReviews":"N/A","tomatoFresh":"N/A","tomatoRotten":"N/A","tomatoConsensus":"N/A","tomatoUserMeter":"N/A","tomatoUserRating":"N/A","tomatoUserReviews":"N/A","tomatoURL":"http://www.rottentomatoes.com/m/inception/","DVD":"07
+        Dec 2010","BoxOffice":"$292,568,851","Production":"Warner Bros. Pictures","Website":"http://inceptionmovie.warnerbros.com/","Response":"True"}'
     http_version: 
-  recorded_at: Fri, 10 Jun 2016 20:19:14 GMT
+  recorded_at: Sun, 08 Oct 2017 17:12:48 GMT
 recorded_with: VCR 3.0.3
