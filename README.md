@@ -2,7 +2,7 @@
 
 [![Gem Version](https://badge.fury.io/rb/omdbapi.png)](http://badge.fury.io/rb/omdbapi)
 
-This gem is a simple and easy to use wrapper for the [omdbapi.com](http://omdbapi.com/) API. This API allows you to pull almost any type of information about a show or movie, and uses information from IMDb. 
+This gem is a simple and easy-to-use wrapper for the [omdbapi.com](http://omdbapi.com/) API. This API allows you to pull almost any type of information about a show or movie, and uses information from IMDb. 
 
 ## Documentation
 
@@ -41,7 +41,7 @@ require 'omdbapi'
 ```
 ### Title
 
-You can get a movie or TV show's information in a Hash by using the title method, shown below:
+You can get a movie or TV show's information in a Hash by using the `title` method, shown below:
 
 ```ruby
 game_of_thrones = OMDB.title('Game of Thrones')
@@ -80,7 +80,7 @@ OMDB.title('True Detective', { :season => '1', :episode => '1' })
 
 ### IMDb ID
 
-You can find a title by it's IMDb ID using the id method:
+You can find a title by its IMDb ID using the `id` method:
 
 ```ruby
 lost = OMDB.id('tt0411008')
@@ -92,7 +92,7 @@ lost.imdb_rating # => "8.3"
 
 ### Search
 
-You can find a title by using the search method:
+You can find a title by using the `search` method:
 
 ```ruby
 results = OMDB.search('Star Wars')
@@ -110,7 +110,7 @@ This method returns an Array of search results. Each search result is a Hash wit
 If there is only a single search result, the title will be returned as a Hash with the full information, instead of the Array of shortened search results.
 
 
-This method will return a Hash of the title's properties, exactly as the title method.
+This method will return a Hash of the title's properties, exactly the same as the `title` method.
 
 ## Running the Tests
 
