@@ -2,6 +2,8 @@
 
 [![Gem Version](https://badge.fury.io/rb/omdbapi.png)](http://badge.fury.io/rb/omdbapi)
 
+__Note: This library is outdated and doesn't currently work with OMDb's API or the latest version of Ruby, and I am currently unable to resolve these issues. I recommend using [this gem](https://github.com/nikkypx/omdb-api) as an alternative.__
+
 This gem is a simple and easy-to-use wrapper for the [omdbapi.com](http://omdbapi.com/) API. This API allows you to pull almost any type of information about a show or movie, and uses information from IMDb. 
 
 ## Documentation
